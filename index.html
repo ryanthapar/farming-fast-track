@@ -27,29 +27,7 @@
     --line:#e3e9ec;
     --shadow:0 10px 30px rgba(41,68,82,.10);
     --maxw:960px;
-  }
-  @media (prefers-color-scheme:dark){
-    :root{
-      --ground:#0f171c;
-      --surface:#17232a;
-      --surface-2:#1e2c34;
-      --slate:#8fb9d0;
-      --slate-deep:#a9cbdd;
-      --body:#c4cdd2;
-      --muted:#8b969c;
-      --red:#ff6a5f;
-      --green:#82c862;
-      --line:#293840;
-      --shadow:0 10px 30px rgba(0,0,0,.35);
-    }
-  }
-  :root[data-theme="light"]{
-    --ground:#ffffff;--surface:#f5f8fa;--surface-2:#eaf0f3;--slate:#37576b;--slate-deep:#294452;
-    --body:#4a5257;--muted:#7b868d;--red:#e02d24;--green:#4f9c3a;--line:#e3e9ec;--shadow:0 10px 30px rgba(41,68,82,.10);
-  }
-  :root[data-theme="dark"]{
-    --ground:#0f171c;--surface:#17232a;--surface-2:#1e2c34;--slate:#8fb9d0;--slate-deep:#a9cbdd;
-    --body:#c4cdd2;--muted:#8b969c;--red:#ff6a5f;--green:#82c862;--line:#293840;--shadow:0 10px 30px rgba(0,0,0,.35);
+    color-scheme:light;
   }
 
   *{box-sizing:border-box}
@@ -108,8 +86,6 @@
   .btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(224,45,36,.36)}
   .btn-ghost{background:transparent;color:var(--slate);border:2px solid var(--slate)}
   .btn-ghost:hover{background:var(--slate);color:var(--ground);transform:translateY(-2px)}
-  :root[data-theme="dark"] .btn-ghost:hover{color:#0f171c}
-  @media (prefers-color-scheme:dark){.btn-ghost:hover{color:#0f171c}}
 
   /* Curriculum grid */
   .subhead{text-align:center;max-width:640px;margin:16px auto 0;color:var(--body)}
@@ -153,15 +129,10 @@
 
   /* Details band */
   .details{background:var(--slate);color:#fff}
-  :root[data-theme="dark"] .details{background:var(--surface-2)}
-  @media (prefers-color-scheme:dark){.details{background:var(--surface-2)}}
   .details .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;text-align:center}
   .detail .k{text-transform:uppercase;letter-spacing:2px;font-size:12px;font-weight:800;opacity:.75;margin:0 0 8px}
   .detail .v{font-size:20px;font-weight:800;margin:0;line-height:1.3}
   .details.details--slate .detail .v{color:#fff}
-  :root[data-theme="dark"] .details .detail .v{color:var(--slate-deep)}
-  :root[data-theme="dark"] .details .detail .k{color:#fff;opacity:.6}
-  @media (prefers-color-scheme:dark){.details .detail .v{color:var(--slate-deep)}.details .detail .k{opacity:.6}}
 
   /* Testimonials */
   .quotes{display:flex;flex-direction:column;gap:26px;max-width:760px;margin:44px auto 0}
