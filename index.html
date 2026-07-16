@@ -177,12 +177,18 @@
   .final p{margin:0 0 8px}
   .final p b{color:var(--slate-deep)}
 
+  /* Behind-the-scenes gallery */
+  .gallery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:26px;max-width:900px;margin:44px auto 0}
+  .shot{margin:0}
+  .shot img{width:100%;height:auto;display:block;border-radius:18px;border:1px solid var(--line);box-shadow:var(--shadow);background:var(--surface-2)}
+  .shot figcaption{margin-top:14px;text-align:center;font-size:15px;color:var(--muted);line-height:1.5}
+
   footer{padding:40px 0 56px;text-align:center;color:var(--muted);font-size:13.5px}
   footer .brand{font-weight:800;color:var(--slate);letter-spacing:.3px}
 
   @media (max-width:720px){
     section{padding:48px 0}
-    .grid,.cards,.details .wrap,.final-grid{grid-template-columns:1fr}
+    .grid,.cards,.details .wrap,.final-grid,.gallery-grid{grid-template-columns:1fr}
     .final h2{text-align:center}
     .final-grid img{max-width:280px}
     .details .wrap{gap:22px}
@@ -379,6 +385,25 @@
           <a class="btn btn-ghost" href="mailto:letsfarmwithmonicathapar@gmail.com?subject=Info%20Request">Request More Info</a>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<section class="gallery">
+  <div class="wrap">
+    <p class="eyebrow">Behind the Scenes</p>
+    <h2 class="section">See It In Action</h2>
+    <div class="gallery-grid">
+      <figure class="shot">
+        <img src="personality-colour-doors.jpg.JPG" alt="Four brightly coloured doors on stage used to role-play door knocking for different personality types" loading="lazy">
+        <figcaption>The real doors we use to role-play door knocking — each colour represents a different personality type.</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="lets-farm-team.jpg" alt="The Let's Farm with Monica Thapar coaching team in matching branded t-shirts" loading="lazy">
+        <figcaption>The Let's Farm coaching team, ready to help you build your farm.</figcaption>
+      </figure>
     </div>
   </div>
 </section>
