@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>You're Registered! — Fast Track Farming</title>
+<meta name="robots" content="noindex">
+<!-- Meta Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '560295672672335');
+  fbq('track', 'PageView');
+  // Purchase conversion — fires when Square redirects a paid customer here.
+  // TODO: set the real ticket price in `value` before wiring up the Square redirect.
+  fbq('track', 'Purchase', {value: 0.00, currency: 'CAD'});
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=560295672672335&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<style>
+  :root{
+    --ground:#ffffff;--surface:#f5f8fa;--surface-2:#eaf0f3;--slate:#37576b;--slate-deep:#294452;
+    --body:#4a5257;--muted:#7b868d;--red:#e02d24;--green:#4f9c3a;--line:#e3e9ec;
+    --shadow:0 10px 30px rgba(41,68,82,.10);color-scheme:light;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;background:var(--ground);color:var(--body);min-height:100vh;
+    display:flex;align-items:center;justify-content:center;padding:40px 24px;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased;
+  }
+  .card{
+    max-width:560px;width:100%;text-align:center;background:var(--surface);
+    border:1px solid var(--line);border-radius:20px;padding:48px 34px;box-shadow:var(--shadow);
+  }
+  .check{
+    width:76px;height:76px;margin:0 auto 22px;border-radius:50%;background:var(--green);
+    color:#fff;font-size:42px;line-height:76px;font-weight:900;
+  }
+  .eyebrow{
+    text-transform:uppercase;letter-spacing:3px;font-size:13px;font-weight:800;
+    color:var(--green);margin:0 0 12px;
+  }
+  h1{
+    font-weight:900;color:var(--slate);text-transform:uppercase;letter-spacing:-.5px;
+    line-height:1.02;margin:0 0 16px;font-size:clamp(32px,7vw,48px);text-wrap:balance;
+  }
+  p{margin:0 0 14px}
+  p b{color:var(--slate-deep)}
+  .details{
+    background:var(--ground);border:1px solid var(--line);border-radius:14px;
+    padding:18px 20px;margin:24px 0;font-weight:700;color:var(--slate-deep);
+  }
+  .details .red{color:var(--red)}
+  .muted{color:var(--muted);font-size:15px;margin-top:22px}
+  .btn{
+    display:inline-block;margin-top:26px;font-weight:800;font-size:16px;letter-spacing:.4px;
+    text-transform:uppercase;text-decoration:none;border-radius:999px;padding:15px 36px;
+    background:var(--slate);color:#fff;
+  }
+</style>
+</head>
+<body>
+  <main class="card">
+    <div class="check">✓</div>
+    <p class="eyebrow">You're Registered</p>
+    <h1>See You at Fast Track Farming!</h1>
+    <p>Your seat is confirmed — <b>thank you and welcome!</b> A confirmation email with your receipt and next steps is on its way.</p>
+    <div class="details">
+      📅 Tuesday, September 22, 2026<br>
+      <span class="red">10:00 AM – 6:00 PM</span><br>
+      📍 Venu Event Space
+    </div>
+    <p>Keep an eye on your inbox for your <b>Farming 101 Workbook</b> and event details. Questions? Just reply to your confirmation email.</p>
+    <a class="btn" href="index.html">Back to Home</a>
+    <p class="muted">Let's Farm with Monica Thapar</p>
+  </main>
+</body>
+</html>
