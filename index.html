@@ -163,6 +163,8 @@
   /* Early-bird cards */
   .early{background:var(--surface)}
   .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;max-width:860px;margin:40px auto 0}
+  .cards--single{grid-template-columns:1fr;max-width:620px}
+  .deadline-note{max-width:620px;margin:16px auto 0;text-align:center;font-size:13.5px;color:var(--muted);line-height:1.5}
   .card{
     background:var(--ground);border:1px solid var(--line);border-radius:18px;
     padding:30px 28px;box-shadow:var(--shadow);position:relative;overflow:hidden;
@@ -350,37 +352,23 @@
     <p class="eyebrow">Register Early — The Sooner You Register, The More You Get</p>
     <h2 class="section">Register &amp; Get More</h2>
     <div class="price-anchor">
-      <p class="pa-line">Ticket: <b>$1,000</b><span class="pa-dot">·</span>Bonuses included: <b>$4,820</b></p>
-      <p class="pa-total">Total value <b>$5,820</b> — you pay <b class="pa-pay">$1,000</b></p>
+      <p class="pa-line">Ticket: <b>$1,000</b><span class="pa-dot">·</span>Bonuses included: <b>$3,000</b></p>
+      <p class="pa-total">Total value <b>$4,000</b> — you pay <b class="pa-pay">$1,000</b></p>
       <p class="pa-sub">One full day — everything below is included</p>
     </div>
-    <div class="cards">
+    <div class="cards cards--single">
       <div class="card">
-        <span class="tag">By July 25</span>
-        <h3>Register by July 25 — the FASTTRACK Success Bundle</h3>
+        <span class="tag">By August 16</span>
+        <h3>Register by August 16, 2026 — the FASTTRACK Bundle</h3>
         <ul>
-          <li><span class="tick">⭐</span><span><b>Private 1-Hour Live Door Knocking Session with Monica</b> <b style="color:var(--red)">(Value: $1,500)</b><br><span style="color:var(--muted);font-size:13.5px">Redeemable within one year in Etobicoke.</span></span></li>
-          <li><span class="tick">✓</span><span><b>Priority Seating</b> <b style="color:var(--red)">($150 Value)</b></span></li>
-          <li><span class="tick">✓</span><span><b>Farming 101 Workbook</b> before the event</span></li>
-          <li><span class="tick">✓</span><span><b>3 Months</b> of the Door Knocking App <b style="color:var(--red)">($300 Value)</b></span></li>
-          <li><span class="tick">✓</span><span><b>6 Months</b> in the No Chai Samosa Group <b style="color:var(--red)">($600 Value)</b></span></li>
-          <li><span class="tick">✓</span><span><b>Personality Assessment</b> + Results</span></li>
-          <li><span class="tick">✓</span><span><b>Free Leasing Course</b> <b style="color:var(--red)">($200 Value)</b></span></li>
-          <li><span class="tick">✓</span><span><b>30% Off</b> Listing &amp; Buyer Express Courses <b style="color:var(--red)">($570 Value)</b></span></li>
-          <li><span class="tick">✓</span><span><b>Exclusive Post-Event Group Zoom Implementation Session</b> <b style="color:var(--red)">($1,500 Value)</b> — after you've had time to apply what you learned, we meet as a group to review your progress, answer your questions, and work through any challenges</span></li>
+          <li><span class="tick">⭐</span><span><b>Private 1-Hour Live Door Knocking Session with Monica</b> <b style="color:var(--red)">($1,500 Value)</b><br><span style="color:var(--muted);font-size:13.5px">Redeemable within one year in Etobicoke.</span></span></li>
+          <li><span class="tick">⭐</span><span><b>Exclusive Post-Event Group Zoom Implementation Session</b> <b style="color:var(--red)">($1,500 Value)</b> — after you've had time to apply what you learned, we meet as a group to review your progress, answer your questions, and work through any challenges</span></li>
         </ul>
-        <p class="total-value">Over <b>$4,820</b> in value — <span class="free">yours when you register by July 25</span></p>
-        <p class="clock">⏰ Register by July 25 to claim the full bundle</p>
-      </div>
-      <div class="card">
-        <span class="tag">By August 1</span>
-        <h3>Register by August 1, 2026</h3>
-        <ul>
-          <li><span class="tick">✓</span><span><b>Exclusive Post-Event Group Zoom Implementation Session</b> — after you've had time to apply what you learned, we meet as a group to review your progress, answer your questions, and work through any challenges</span></li>
-        </ul>
-        <p class="clock">⏰ Available to everyone who registers on or before August 1</p>
+        <p class="total-value"><b>$3,000</b> in bonuses — <span class="free">yours when you register by August 16</span></p>
+        <p class="clock">⏰ Register by August 16 to claim the bundle</p>
       </div>
     </div>
+    <p class="deadline-note">Our bonus deadlines are firm — the July 25 bundle has already closed. This one closes August 16.</p>
     <div class="cta-row">
       <a class="btn btn-primary" href="https://square.link/u/hlcxwXLn" target="_blank" rel="noopener noreferrer" onclick="if(typeof fbq!=='undefined')fbq('track','InitiateCheckout');">Reserve My Seat Now</a>
       <a class="btn btn-ghost" href="mailto:letsfarmwithmonicathapar@gmail.com?subject=Info%20Request" onclick="if(typeof fbq!=='undefined')fbq('track','Contact');">Request More Info</a>
