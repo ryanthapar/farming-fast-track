@@ -142,6 +142,45 @@
   .plan-v{margin:0;font-size:16px;font-weight:700;color:var(--slate-deep);line-height:1.55}
   .plan-v b{color:var(--slate)}
 
+  /* Why farming band */
+  .why{background:var(--slate);color:#fff}
+  .why .eyebrow{color:#fff;opacity:.72}
+  .why h2.section{color:#fff}
+  .why-lead{max-width:720px;margin:18px auto 0;text-align:center;font-size:17.5px;line-height:1.65;color:rgba(255,255,255,.88)}
+  .why-lead b{color:#fff}
+  .why-quote{
+    max-width:760px;margin:34px auto 0;text-align:center;
+    background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.2);
+    border-radius:18px;padding:30px 28px;
+  }
+  .why-quote .wq{margin:0;font-size:clamp(20px,4vw,28px);font-weight:900;line-height:1.25;color:#fff;text-wrap:balance}
+  .why-quote .wq-sub{margin:14px 0 0;font-size:16px;font-weight:600;line-height:1.55;color:rgba(255,255,255,.82)}
+  /* Who this is for */
+  .who-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px 22px;max-width:860px;margin:42px auto 0}
+  .who{
+    background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--red);
+    border-radius:14px;padding:20px 22px;
+  }
+  .who h3{margin:0 0 7px;font-size:17.5px;font-weight:900;color:var(--slate);line-height:1.25}
+  .who p{margin:0;font-size:15.5px;line-height:1.55;color:var(--body)}
+  .who p b{color:var(--slate-deep)}
+  .myth{max-width:860px}
+  .not-for{
+    max-width:860px;margin:26px auto 0;background:var(--surface-2);
+    border:1px dashed var(--muted);border-radius:16px;padding:22px 24px;
+  }
+  .not-for .nf-k{
+    margin:0 0 8px;font-size:12.5px;font-weight:900;letter-spacing:1.5px;
+    text-transform:uppercase;color:var(--muted);
+  }
+  .not-for .nf-v{margin:0;font-size:15.5px;line-height:1.6;color:var(--body)}
+  .not-for .nf-v b{color:var(--slate-deep)}
+  .commit{
+    max-width:860px;margin:22px auto 0;text-align:center;background:var(--ground);
+    border:2px solid var(--red);border-radius:16px;padding:22px 26px;box-shadow:var(--shadow);
+  }
+  .commit p{margin:0;font-size:clamp(16px,3.4vw,18px);font-weight:800;color:var(--slate-deep);line-height:1.5}
+  .commit p b{color:var(--red)}
   /* About Monica */
   .about{background:var(--surface)}
   .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;max-width:860px;margin:42px auto 0}
@@ -262,10 +301,16 @@
 
   footer{padding:40px 0 56px;text-align:center;color:var(--muted);font-size:13.5px}
   footer .brand{font-weight:800;color:var(--slate);letter-spacing:.3px}
+  .ast{color:inherit;text-decoration:none;font-weight:700;vertical-align:super;font-size:.7em}
+  .ast:hover,.ast:focus-visible{text-decoration:underline}
+  .fineprint{
+    max-width:760px;margin:24px auto 0;padding-top:20px;border-top:1px solid var(--line);
+    font-size:12px;line-height:1.6;color:var(--muted);text-align:left;
+  }
 
   @media (max-width:720px){
     section{padding:48px 0}
-    .grid,.cards,.details .wrap,.final-grid,.gallery-grid{grid-template-columns:1fr}
+    .grid,.cards,.who-grid,.details .wrap,.final-grid,.gallery-grid{grid-template-columns:1fr}
     .stats{grid-template-columns:repeat(2,1fr)}
     .final h2{text-align:center}
     .final-grid img{max-width:280px}
@@ -290,7 +335,7 @@
     </div>
     <p class="lead">
       One focused day to build your entire geographical farming business — from a
-      <em>written plan</em> to <em>door-knocking scripts</em> to <span class="u">signing every listing at 6%</span>*.
+      <em>written plan</em> to <em>door-knocking scripts</em> to <span class="u">signing every listing at 6%</span><a class="ast" href="#commission-note" aria-label="See commission disclaimer">*</a>.
       Everything you need to start farming your area <em>right away</em>, taught live by Monica Thapar.
     </p>
     <div class="cta-row">
@@ -327,6 +372,71 @@
     </div>
     <div class="membership">
       <span class="plus">PLUS</span> &nbsp;<b>A 1-Month Membership to Monica's exclusive “No Chai Samosa” group</b> — the private community where farmers share wins, scripts, and support.
+    </div>
+  </div>
+</section>
+
+<section class="why">
+  <div class="wrap">
+    <p class="eyebrow">Why This Method</p>
+    <h2 class="section">Look At Who's Winning</h2>
+    <p class="why-lead">Pull up the top hundred agents in the GTA. Or just name the top agents you already know in your own market. Then ask what they actually <em>do</em> to get listings — online leads, geographical farming, or both? <b>Look closely at the ones who never seem to run out of listings, and you'll keep finding the same thing: they own a neighbourhood.</b></p>
+    <div class="why-quote">
+      <p class="wq">“Go to where the decision-maker and the product are — at the door.”</p>
+      <p class="wq-sub">The homeowner and the home, in the same place, at the same time. No other lead source puts you there.</p>
+    </div>
+  </div>
+</section>
+
+<section id="who-for">
+  <div class="wrap">
+    <p class="eyebrow">Is This You?</p>
+    <h2 class="section">Who This Is For</h2>
+    <p class="subhead">Geographical farming isn't for every agent — but for the right one, it's the last lead-generation system you'll ever need to build.</p>
+    <div class="who-grid">
+      <div class="who">
+        <h3>You want to own a neighbourhood</h3>
+        <p>Not chase leads all over the city. One area where your name is the one people already know — before they ever think about a brokerage.</p>
+      </div>
+      <div class="who">
+        <h3>You want to be the listing agent</h3>
+        <p>Not the one showing other people's listings every weekend. Farming is how you get on the other side of that.</p>
+      </div>
+      <div class="who">
+        <h3>You want to hold your commission</h3>
+        <p>No discounting, no apologizing for your fee. <b>Step 12 is that exact conversation</b> — so you sign at 6% every time.</p>
+      </div>
+      <div class="who">
+        <h3>You're done driving all over the GTA</h3>
+        <p>One farm, close to home. No listing appointment in Barrie and a showing in Oshawa on the same day.</p>
+      </div>
+      <div class="who">
+        <h3>You want a Canadian coach who's still in the trenches</h3>
+        <p>In person, in the room, with an <b>active REALTOR®</b> who works this market and knows its demographics — not a recorded course from someone who left the business years ago.</p>
+      </div>
+      <div class="who">
+        <h3>You're ready to actually do the work</h3>
+        <p>This is a knock-on-doors business. The system works — and it works when you work it, one step at a time.</p>
+      </div>
+      <div class="who">
+        <h3>You want a business you can one day sell</h3>
+        <p>A farm is an asset. It has a name, a territory, and a repeatable system — so you can <b>build a team on it, scale it, and eventually sell it.</b> A pipeline of bought leads disappears the day you stop paying for it.</p>
+      </div>
+      <div class="who">
+        <h3>You can commit five hours a week</h3>
+        <p>That's the number. <b>Five focused hours in your farm</b> — which leaves the other 35 for online, social media, and your buyers. Farming doesn't replace your business. It anchors it.</p>
+      </div>
+    </div>
+    <div class="plan myth">
+      <p class="plan-k">And one thing farming is not</p>
+      <p class="plan-v">You will <b>never</b> stand at a door and ask someone if they want to sell their home. That isn't geographical farming, and it isn't what you'll be taught. What you'll learn is exactly what to say instead — so the neighbourhood knows you, remembers you, and calls you when it's their time.</p>
+    </div>
+    <div class="not-for">
+      <p class="nf-k">And who it isn't for</p>
+      <p class="nf-v">If you're looking for a lead list to buy, an ad platform to outspend everyone on, or a system that runs without you ever knocking on a door — <b>this isn't that.</b> Farming rewards the agent who shows up in the same neighbourhood, over and over, until it's theirs.</p>
+    </div>
+    <div class="commit">
+      <p>If that's you, you're ready to invest <b>$1,000</b> in a business that pays it back on your first listing.</p>
     </div>
   </div>
 </section>
@@ -486,7 +596,7 @@
       <div>
         <h2 class="section display">Ready to Farm Your Area?</h2>
         <p class="when-red">September 22 · 10 AM – 6 PM · Venu Event Space</p>
-        <p>Don't miss this one-day opportunity to build your entire farming business — the plan, the branding, the scripts, and the system to sign at <b>6% every time</b>.</p>
+        <p>Don't miss this one-day opportunity to build your entire farming business — the plan, the branding, the scripts, and the system to sign at <b>6% every time</b><a class="ast" href="#commission-note" aria-label="See commission disclaimer">*</a>.</p>
         <p>Seats are limited and priority goes to early registrants. <b>Reserve your seat today.</b></p>
         <div class="cta-row" style="justify-content:flex-start">
           <a class="btn btn-primary" href="https://square.link/u/hlcxwXLn" target="_blank" rel="noopener noreferrer" onclick="if(typeof fbq!=='undefined')fbq('track','InitiateCheckout');">Reserve My Seat</a>
@@ -519,6 +629,7 @@
 <footer>
   <p class="brand">Let's Farm with Monica Thapar</p>
   <p>Fast Track Farming · Tuesday, September 22, 2026 · Venu Event Space</p>
+  <p class="fineprint" id="commission-note">*Commission and remuneration rates are not fixed, standardized, or set by law, and are fully negotiable between a client and a brokerage. The 6% referenced throughout reflects Monica Thapar's own practice and results in her market. Fast Track Farming teaches an approach to presenting and holding your fee — it is not a guarantee that any participant will obtain any particular rate, listing, or level of income. Results depend on your market, your brokerage's policies, and the effort you put in. Nothing on this page is legal, financial, or brokerage-compliance advice.</p>
 </footer>
 
 </body>
