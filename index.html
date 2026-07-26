@@ -142,6 +142,31 @@
   .plan-v{margin:0;font-size:16px;font-weight:700;color:var(--slate-deep);line-height:1.55}
   .plan-v b{color:var(--slate)}
 
+  /* Who this is for */
+  .who-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px 22px;max-width:860px;margin:42px auto 0}
+  .who{
+    background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--red);
+    border-radius:14px;padding:20px 22px;
+  }
+  .who h3{margin:0 0 7px;font-size:17.5px;font-weight:900;color:var(--slate);line-height:1.25}
+  .who p{margin:0;font-size:15.5px;line-height:1.55;color:var(--body)}
+  .who p b{color:var(--slate-deep)}
+  .not-for{
+    max-width:860px;margin:26px auto 0;background:var(--surface-2);
+    border:1px dashed var(--muted);border-radius:16px;padding:22px 24px;
+  }
+  .not-for .nf-k{
+    margin:0 0 8px;font-size:12.5px;font-weight:900;letter-spacing:1.5px;
+    text-transform:uppercase;color:var(--muted);
+  }
+  .not-for .nf-v{margin:0;font-size:15.5px;line-height:1.6;color:var(--body)}
+  .not-for .nf-v b{color:var(--slate-deep)}
+  .commit{
+    max-width:860px;margin:22px auto 0;text-align:center;background:var(--ground);
+    border:2px solid var(--red);border-radius:16px;padding:22px 26px;box-shadow:var(--shadow);
+  }
+  .commit p{margin:0;font-size:clamp(16px,3.4vw,18px);font-weight:800;color:var(--slate-deep);line-height:1.5}
+  .commit p b{color:var(--red)}
   /* About Monica */
   .about{background:var(--surface)}
   .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;max-width:860px;margin:42px auto 0}
@@ -265,7 +290,7 @@
 
   @media (max-width:720px){
     section{padding:48px 0}
-    .grid,.cards,.details .wrap,.final-grid,.gallery-grid{grid-template-columns:1fr}
+    .grid,.cards,.who-grid,.details .wrap,.final-grid,.gallery-grid{grid-template-columns:1fr}
     .stats{grid-template-columns:repeat(2,1fr)}
     .final h2{text-align:center}
     .final-grid img{max-width:280px}
@@ -327,6 +352,49 @@
     </div>
     <div class="membership">
       <span class="plus">PLUS</span> &nbsp;<b>A 1-Month Membership to Monica's exclusive “No Chai Samosa” group</b> — the private community where farmers share wins, scripts, and support.
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<section id="who-for">
+  <div class="wrap">
+    <p class="eyebrow">Is This You?</p>
+    <h2 class="section">Who This Is For</h2>
+    <p class="subhead">Geographical farming isn't for every agent — but for the right one, it's the last lead-generation system you'll ever need to build.</p>
+    <div class="who-grid">
+      <div class="who">
+        <h3>You want to own a neighbourhood</h3>
+        <p>Not chase leads all over the city. One area where your name is the one people already know — before they ever think about a brokerage.</p>
+      </div>
+      <div class="who">
+        <h3>You want to be the listing agent</h3>
+        <p>Not the one showing other people's listings every weekend. Farming is how you get on the other side of that.</p>
+      </div>
+      <div class="who">
+        <h3>You want to hold your commission</h3>
+        <p>No discounting, no apologizing for your fee. <b>Step 12 is that exact conversation</b> — so you sign at 6% every time.</p>
+      </div>
+      <div class="who">
+        <h3>You're done driving all over the GTA</h3>
+        <p>One farm, close to home. No listing appointment in Barrie and a showing in Oshawa on the same day.</p>
+      </div>
+      <div class="who">
+        <h3>You want a Canadian coach who's still in the trenches</h3>
+        <p>In person, in the room, with an <b>active REALTOR®</b> who works this market and knows its demographics — not a recorded course from someone who left the business years ago.</p>
+      </div>
+      <div class="who">
+        <h3>You're ready to actually do the work</h3>
+        <p>This is a knock-on-doors business. The system works — and it works when you work it, one step at a time.</p>
+      </div>
+    </div>
+    <div class="not-for">
+      <p class="nf-k">And who it isn't for</p>
+      <p class="nf-v">If you're looking for a lead list to buy, an ad platform to outspend everyone on, or a system that runs without you ever knocking on a door — <b>this isn't that.</b> Farming rewards the agent who shows up in the same neighbourhood, over and over, until it's theirs.</p>
+    </div>
+    <div class="commit">
+      <p>If that's you, you're ready to invest <b>$1,000</b> in a business that pays it back on your first listing.</p>
     </div>
   </div>
 </section>
