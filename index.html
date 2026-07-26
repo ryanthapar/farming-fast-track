@@ -89,6 +89,10 @@
     border:1px solid var(--line);border-radius:999px;padding:9px 16px;
     font-size:14px;font-weight:700;color:var(--slate-deep);
   }
+  .pill--price{
+    background:var(--red);border-color:var(--red);color:#fff;font-weight:800;
+    box-shadow:0 6px 16px rgba(224,45,36,.24);
+  }
   .lead{max-width:640px;margin:26px auto 0;font-size:19px;color:var(--body)}
   .lead em{font-style:italic}
   .lead .u{text-decoration:underline;text-decoration-color:var(--red);text-underline-offset:3px}
@@ -170,9 +174,22 @@
   .total-value b{color:var(--red);font-size:20px}
   .total-value .free{display:block;font-weight:700;color:var(--slate);font-size:14px;margin-top:2px}
   .clock{font-size:14px;font-weight:800;color:var(--red);text-align:center;margin:6px 0 0;letter-spacing:.3px}
-  .price{text-align:center;margin:36px auto 0;font-size:20px;font-weight:800;color:var(--slate-deep)}
-  .price b{color:var(--red);font-size:30px;margin-left:6px}
-  .price .price-sub{display:block;font-size:14px;font-weight:700;color:var(--muted);margin-top:4px}
+  /* Anchored price block */
+  .price-anchor{
+    max-width:640px;margin:34px auto 0;text-align:center;
+    background:var(--ground);border:2px solid var(--red);border-radius:18px;
+    padding:24px 26px;box-shadow:var(--shadow);
+  }
+  .price-anchor .pa-line{margin:0;font-size:clamp(15.5px,3.4vw,17.5px);font-weight:800;color:var(--slate-deep);line-height:1.5}
+  .price-anchor .pa-line b{color:var(--slate);font-size:1.15em}
+  .price-anchor .pa-dot{color:var(--muted);margin:0 6px}
+  .price-anchor .pa-total{
+    margin:16px 0 0;padding-top:16px;border-top:1px solid var(--line);
+    font-size:clamp(17px,3.6vw,19px);font-weight:800;color:var(--slate-deep);line-height:1.35;
+  }
+  .price-anchor .pa-total b{color:var(--slate)}
+  .price-anchor .pa-total b.pa-pay{color:var(--red);font-weight:900;font-size:clamp(26px,6.5vw,32px);white-space:nowrap}
+  .price-anchor .pa-sub{margin:10px 0 0;font-size:14px;font-weight:700;color:var(--muted)}
 
   /* Details band */
   .details{background:var(--slate);color:#fff}
@@ -245,6 +262,7 @@
     <p class="when">Tuesday, September 22, 2026 &nbsp;·&nbsp; 10:00 AM – 6:00 PM</p>
     <p class="where">Venu Event Space</p>
     <div class="badges">
+      <span class="pill pill--price">💵 $1,000 per seat</span>
       <span class="pill">📍 In-Person</span>
       <span class="pill">⏱️ 1-Day Intensive</span>
       <span class="pill">✅ 12-Step Farming System</span>
@@ -317,6 +335,11 @@
   <div class="wrap">
     <p class="eyebrow">Register Early — The Sooner You Register, The More You Get</p>
     <h2 class="section">Register &amp; Get More</h2>
+    <div class="price-anchor">
+      <p class="pa-line">Ticket: <b>$1,000</b><span class="pa-dot">·</span>Bonuses included: <b>$4,820</b></p>
+      <p class="pa-total">Total value <b>$5,820</b> — you pay <b class="pa-pay">$1,000</b></p>
+      <p class="pa-sub">One full day — everything below is included</p>
+    </div>
     <div class="cards">
       <div class="card">
         <span class="tag">By July 25</span>
@@ -344,7 +367,6 @@
         <p class="clock">⏰ Available to everyone who registers on or before August 1</p>
       </div>
     </div>
-    <p class="price">Your Investment: <b>$1,000</b><span class="price-sub">One full day — everything above included</span></p>
     <div class="cta-row">
       <a class="btn btn-primary" href="https://square.link/u/hlcxwXLn" target="_blank" rel="noopener noreferrer" onclick="if(typeof fbq!=='undefined')fbq('track','InitiateCheckout');">Reserve My Seat Now</a>
       <a class="btn btn-ghost" href="mailto:letsfarmwithmonicathapar@gmail.com?subject=Info%20Request" onclick="if(typeof fbq!=='undefined')fbq('track','Contact');">Request More Info</a>
