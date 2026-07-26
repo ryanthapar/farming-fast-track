@@ -42,6 +42,10 @@
     --muted:#7b868d;
     --red:#e02d24;
     --green:#4f9c3a;
+    /* Brand blue is a light tint — fills, bars and accents only (1.75:1 on white).
+       --blue-ink is the same hue darkened for legible text (4.86:1 on white). */
+    --blue:#97ccde;
+    --blue-ink:#2a7a96;
     --line:#e3e9ec;
     --shadow:0 10px 30px rgba(41,68,82,.10);
     --maxw:960px;
@@ -71,8 +75,10 @@
   }
   .eyebrow{
     text-transform:uppercase;letter-spacing:3px;font-size:13px;font-weight:800;
-    color:var(--red);margin:0 0 14px;text-align:center;
+    color:var(--blue-ink);margin:0 0 14px;text-align:center;
   }
+  /* Red eyebrow is reserved for the one section asking for action */
+  .eyebrow--red{color:var(--red)}
 
   /* Section rhythm */
   section{padding:66px 0}
@@ -90,12 +96,12 @@
     font-size:14px;font-weight:700;color:var(--slate-deep);
   }
   .pill--price{
-    background:var(--red);border-color:var(--red);color:#fff;font-weight:800;
-    box-shadow:0 6px 16px rgba(224,45,36,.24);
+    background:var(--slate);border-color:var(--slate);color:#fff;font-weight:800;
+    box-shadow:0 6px 16px rgba(41,68,82,.22);
   }
   .lead{max-width:640px;margin:26px auto 0;font-size:19px;color:var(--body)}
   .lead em{font-style:italic}
-  .lead .u{text-decoration:underline;text-decoration-color:var(--red);text-underline-offset:3px}
+  .lead .u{text-decoration:underline;text-decoration-color:var(--green);text-underline-offset:3px}
 
   /* Buttons */
   .cta-row{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:32px}
@@ -130,27 +136,27 @@
     border:1px dashed var(--slate);border-radius:16px;padding:22px 24px;
   }
   .membership b{color:var(--slate)}
-  .membership .plus{color:var(--red);font-weight:900}
+  .membership .plus{color:var(--green);font-weight:900}
 
   /* 12-step plan callout */
   .plan{
     max-width:820px;margin:26px auto 0;background:var(--ground);
-    border:1px solid var(--line);border-left:5px solid var(--red);border-radius:14px;
+    border:1px solid var(--line);border-left:5px solid var(--green);border-radius:14px;
     padding:20px 24px;box-shadow:var(--shadow);
   }
-  .plan-k{margin:0 0 8px;font-size:12.5px;font-weight:900;letter-spacing:1.5px;text-transform:uppercase;color:var(--red)}
+  .plan-k{margin:0 0 8px;font-size:12.5px;font-weight:900;letter-spacing:1.5px;text-transform:uppercase;color:var(--green)}
   .plan-v{margin:0;font-size:16px;font-weight:700;color:var(--slate-deep);line-height:1.55}
   .plan-v b{color:var(--slate)}
 
   /* Why farming band */
   .why{background:var(--slate);color:#fff}
-  .why .eyebrow{color:#fff;opacity:.72}
+  .why .eyebrow{color:var(--blue);opacity:1}
   .why h2.section{color:#fff}
   .why-lead{max-width:720px;margin:18px auto 0;text-align:center;font-size:17.5px;line-height:1.65;color:rgba(255,255,255,.88)}
   .why-lead b{color:#fff}
   .why-quote{
     max-width:760px;margin:34px auto 0;text-align:center;
-    background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.2);
+    background:rgba(151,204,222,.1);border:1px solid rgba(151,204,222,.55);
     border-radius:18px;padding:30px 28px;
   }
   .why-quote .wq{margin:0;font-size:clamp(20px,4vw,28px);font-weight:900;line-height:1.25;color:#fff;text-wrap:balance}
@@ -158,13 +164,15 @@
   /* Who this is for */
   .who-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px 22px;max-width:860px;margin:42px auto 0}
   .who{
-    background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--red);
+    background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--green);
     border-radius:14px;padding:20px 22px;
   }
   .who h3{margin:0 0 7px;font-size:17.5px;font-weight:900;color:var(--slate);line-height:1.25}
   .who p{margin:0;font-size:15.5px;line-height:1.55;color:var(--body)}
   .who p b{color:var(--slate-deep)}
-  .myth{max-width:860px}
+  /* Reassurance, not urgency — brand blue instead of the shared red accent */
+  .myth{max-width:860px;background:rgba(151,204,222,.14);border-left-color:var(--blue-ink)}
+  .myth .plan-k{color:var(--blue-ink)}
   .not-for{
     max-width:860px;margin:26px auto 0;background:var(--surface-2);
     border:1px dashed var(--muted);border-radius:16px;padding:22px 24px;
@@ -177,15 +185,18 @@
   .not-for .nf-v b{color:var(--slate-deep)}
   .commit{
     max-width:860px;margin:22px auto 0;text-align:center;background:var(--ground);
-    border:2px solid var(--red);border-radius:16px;padding:22px 26px;box-shadow:var(--shadow);
+    border:2px solid var(--green);border-radius:16px;padding:22px 26px;box-shadow:var(--shadow);
   }
   .commit p{margin:0;font-size:clamp(16px,3.4vw,18px);font-weight:800;color:var(--slate-deep);line-height:1.5}
-  .commit p b{color:var(--red)}
+  .commit p b{color:var(--green)}
   /* About Monica */
   .about{background:var(--surface)}
   .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;max-width:860px;margin:42px auto 0}
-  .stat{background:var(--ground);border:1px solid var(--line);border-radius:14px;padding:20px 14px;text-align:center;box-shadow:var(--shadow)}
-  .statnum{margin:0;font-size:clamp(24px,4.5vw,30px);font-weight:900;color:var(--red);line-height:1}
+  .stat{
+    background:var(--ground);border:1px solid var(--line);border-top:3px solid var(--blue);
+    border-radius:14px;padding:20px 14px;text-align:center;box-shadow:var(--shadow);
+  }
+  .statnum{margin:0;font-size:clamp(24px,4.5vw,30px);font-weight:900;color:var(--blue-ink);line-height:1}
   .statlbl{margin:8px 0 0;font-size:13px;font-weight:700;color:var(--slate-deep);line-height:1.35}
   .about-body{max-width:760px;margin:34px auto 0}
   .about-body p{margin:0 0 16px;font-size:17px;line-height:1.7}
@@ -222,7 +233,7 @@
     margin:18px 0 4px;text-align:center;background:var(--surface-2);border:1px solid var(--line);
     border-radius:12px;padding:12px 16px;font-size:16px;font-weight:800;color:var(--slate-deep);line-height:1.4;
   }
-  .total-value b{color:var(--red);font-size:20px}
+  .total-value b{color:var(--green);font-size:20px}
   .total-value .free{display:block;font-weight:700;color:var(--slate);font-size:14px;margin-top:2px}
   .clock{font-size:14px;font-weight:800;color:var(--red);text-align:center;margin:6px 0 0;letter-spacing:.3px}
   .card--after{background:var(--surface-2);box-shadow:none}
@@ -247,7 +258,7 @@
     margin:16px 0 0;padding-top:16px;border-top:1px solid var(--line);
     font-size:clamp(17px,3.6vw,19px);font-weight:800;color:var(--slate-deep);line-height:1.35;
   }
-  .price-anchor .pa-total b{color:var(--slate)}
+  .price-anchor .pa-total b{color:var(--green)}
   .price-anchor .pa-total b.pa-pay{color:var(--red);font-weight:900;font-size:clamp(26px,6.5vw,32px);white-space:nowrap}
   .price-anchor .pa-sub{margin:10px 0 0;font-size:14px;font-weight:700;color:var(--muted)}
 
@@ -393,6 +404,10 @@
     <p class="eyebrow">Is This You?</p>
     <h2 class="section">Who This Is For</h2>
     <p class="subhead">Geographical farming isn't for every agent — but for the right one, it's the last lead-generation system you'll ever need to build.</p>
+    <div class="plan myth">
+      <p class="plan-k">First — one thing farming is not</p>
+      <p class="plan-v">You will <b>never</b> stand at a door and ask someone if they want to sell their home. That isn't geographical farming, and it isn't what you'll be taught. What you'll learn is exactly what to say instead — so the neighbourhood knows you, remembers you, and calls you when it's their time.</p>
+    </div>
     <div class="who-grid">
       <div class="who">
         <h3>You want to own a neighbourhood</h3>
@@ -426,10 +441,6 @@
         <h3>You can commit five hours a week</h3>
         <p>That's the number. <b>Five focused hours in your farm</b> — which leaves the other 35 for online, social media, and your buyers. Farming doesn't replace your business. It anchors it.</p>
       </div>
-    </div>
-    <div class="plan myth">
-      <p class="plan-k">And one thing farming is not</p>
-      <p class="plan-v">You will <b>never</b> stand at a door and ask someone if they want to sell their home. That isn't geographical farming, and it isn't what you'll be taught. What you'll learn is exactly what to say instead — so the neighbourhood knows you, remembers you, and calls you when it's their time.</p>
     </div>
     <div class="not-for">
       <p class="nf-k">And who it isn't for</p>
@@ -468,7 +479,7 @@
 
 <section class="early" id="register">
   <div class="wrap">
-    <p class="eyebrow">Register Early — The Sooner You Register, The More You Get</p>
+    <p class="eyebrow eyebrow--red">Register Early — The Sooner You Register, The More You Get</p>
     <h2 class="section">Register &amp; Get More</h2>
     <div class="price-anchor">
       <p class="pa-line">Ticket: <b>$1,000</b><span class="pa-dot">·</span>Bonuses included: <b>$3,000</b></p>
@@ -480,8 +491,8 @@
         <span class="tag">By August 16</span>
         <h3>Register by August 16, 2026 — the FASTTRACK Bundle</h3>
         <ul>
-          <li><span class="tick">⭐</span><span><b>Private 1-Hour Live Door Knocking Session with Monica</b> <b style="color:var(--red)">($1,500 Value)</b><br><span style="color:var(--muted);font-size:13.5px">Redeemable within one year in Etobicoke.</span></span></li>
-          <li><span class="tick">⭐</span><span><b>Exclusive Post-Event Group Zoom Implementation Session</b> <b style="color:var(--red)">($1,500 Value)</b> — after you've had time to apply what you learned, we meet as a group to review your progress, answer your questions, and work through any challenges</span></li>
+          <li><span class="tick">⭐</span><span><b>Private 1-Hour Live Door Knocking Session with Monica</b> <b style="color:var(--green)">($1,500 Value)</b><br><span style="color:var(--muted);font-size:13.5px">Redeemable within one year in Etobicoke.</span></span></li>
+          <li><span class="tick">⭐</span><span><b>Exclusive Post-Event Group Zoom Implementation Session</b> <b style="color:var(--green)">($1,500 Value)</b> — after you've had time to apply what you learned, we meet as a group to review your progress, answer your questions, and work through any challenges</span></li>
         </ul>
         <p class="total-value"><b>$3,000</b> in bonuses — <span class="free">yours when you register by August 16</span></p>
         <p class="clock">⏰ Register by August 16 to claim the bundle</p>
