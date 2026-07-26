@@ -42,6 +42,10 @@
     --muted:#7b868d;
     --red:#e02d24;
     --green:#4f9c3a;
+    /* Brand blue is a light tint — fills, bars and accents only (1.75:1 on white).
+       --blue-ink is the same hue darkened for legible text (4.86:1 on white). */
+    --blue:#97ccde;
+    --blue-ink:#2a7a96;
     --line:#e3e9ec;
     --shadow:0 10px 30px rgba(41,68,82,.10);
     --maxw:960px;
@@ -71,8 +75,10 @@
   }
   .eyebrow{
     text-transform:uppercase;letter-spacing:3px;font-size:13px;font-weight:800;
-    color:var(--red);margin:0 0 14px;text-align:center;
+    color:var(--blue-ink);margin:0 0 14px;text-align:center;
   }
+  /* Red eyebrow is reserved for the one section asking for action */
+  .eyebrow--red{color:var(--red)}
 
   /* Section rhythm */
   section{padding:66px 0}
@@ -90,8 +96,8 @@
     font-size:14px;font-weight:700;color:var(--slate-deep);
   }
   .pill--price{
-    background:var(--red);border-color:var(--red);color:#fff;font-weight:800;
-    box-shadow:0 6px 16px rgba(224,45,36,.24);
+    background:var(--slate);border-color:var(--slate);color:#fff;font-weight:800;
+    box-shadow:0 6px 16px rgba(41,68,82,.22);
   }
   .lead{max-width:640px;margin:26px auto 0;font-size:19px;color:var(--body)}
   .lead em{font-style:italic}
@@ -144,13 +150,13 @@
 
   /* Why farming band */
   .why{background:var(--slate);color:#fff}
-  .why .eyebrow{color:#fff;opacity:.72}
+  .why .eyebrow{color:var(--blue);opacity:1}
   .why h2.section{color:#fff}
   .why-lead{max-width:720px;margin:18px auto 0;text-align:center;font-size:17.5px;line-height:1.65;color:rgba(255,255,255,.88)}
   .why-lead b{color:#fff}
   .why-quote{
     max-width:760px;margin:34px auto 0;text-align:center;
-    background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.2);
+    background:rgba(151,204,222,.1);border:1px solid rgba(151,204,222,.55);
     border-radius:18px;padding:30px 28px;
   }
   .why-quote .wq{margin:0;font-size:clamp(20px,4vw,28px);font-weight:900;line-height:1.25;color:#fff;text-wrap:balance}
@@ -164,7 +170,9 @@
   .who h3{margin:0 0 7px;font-size:17.5px;font-weight:900;color:var(--slate);line-height:1.25}
   .who p{margin:0;font-size:15.5px;line-height:1.55;color:var(--body)}
   .who p b{color:var(--slate-deep)}
-  .myth{max-width:860px}
+  /* Reassurance, not urgency — brand blue instead of the shared red accent */
+  .myth{max-width:860px;background:rgba(151,204,222,.14);border-left-color:var(--blue-ink)}
+  .myth .plan-k{color:var(--blue-ink)}
   .not-for{
     max-width:860px;margin:26px auto 0;background:var(--surface-2);
     border:1px dashed var(--muted);border-radius:16px;padding:22px 24px;
@@ -184,8 +192,11 @@
   /* About Monica */
   .about{background:var(--surface)}
   .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;max-width:860px;margin:42px auto 0}
-  .stat{background:var(--ground);border:1px solid var(--line);border-radius:14px;padding:20px 14px;text-align:center;box-shadow:var(--shadow)}
-  .statnum{margin:0;font-size:clamp(24px,4.5vw,30px);font-weight:900;color:var(--red);line-height:1}
+  .stat{
+    background:var(--ground);border:1px solid var(--line);border-top:3px solid var(--blue);
+    border-radius:14px;padding:20px 14px;text-align:center;box-shadow:var(--shadow);
+  }
+  .statnum{margin:0;font-size:clamp(24px,4.5vw,30px);font-weight:900;color:var(--blue-ink);line-height:1}
   .statlbl{margin:8px 0 0;font-size:13px;font-weight:700;color:var(--slate-deep);line-height:1.35}
   .about-body{max-width:760px;margin:34px auto 0}
   .about-body p{margin:0 0 16px;font-size:17px;line-height:1.7}
@@ -468,7 +479,7 @@
 
 <section class="early" id="register">
   <div class="wrap">
-    <p class="eyebrow">Register Early — The Sooner You Register, The More You Get</p>
+    <p class="eyebrow eyebrow--red">Register Early — The Sooner You Register, The More You Get</p>
     <h2 class="section">Register &amp; Get More</h2>
     <div class="price-anchor">
       <p class="pa-line">Ticket: <b>$1,000</b><span class="pa-dot">·</span>Bonuses included: <b>$3,000</b></p>
