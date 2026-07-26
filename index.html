@@ -162,7 +162,7 @@
 
   /* Early-bird cards */
   .early{background:var(--surface)}
-  .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;max-width:860px;margin:40px auto 0}
+  .cards{display:grid;grid-template-columns:repeat(2,1fr);align-items:start;gap:22px;max-width:860px;margin:40px auto 0}
   .cards--single{grid-template-columns:1fr;max-width:620px}
   .deadline-note{max-width:620px;margin:16px auto 0;text-align:center;font-size:13.5px;color:var(--muted);line-height:1.5}
   .card{
@@ -186,6 +186,15 @@
   .total-value b{color:var(--red);font-size:20px}
   .total-value .free{display:block;font-weight:700;color:var(--slate);font-size:14px;margin-top:2px}
   .clock{font-size:14px;font-weight:800;color:var(--red);text-align:center;margin:6px 0 0;letter-spacing:.3px}
+  .card--after{background:var(--surface-2);box-shadow:none}
+  .card--after::before{background:var(--muted)}
+  .card--after .tag{background:var(--muted)}
+  .card--after h3,.card--after li{color:var(--muted)}
+  .card--after li b{color:var(--muted)}
+  .card--after .x{color:var(--muted);font-weight:900;flex:none}
+  .card--after .gone{text-decoration:line-through;text-decoration-color:var(--muted)}
+  .total-value--after{background:transparent;border-style:dashed;color:var(--muted)}
+  .total-value--after .free{color:var(--muted)}
   /* Anchored price block */
   .price-anchor{
     max-width:640px;margin:34px auto 0;text-align:center;
@@ -354,9 +363,9 @@
     <div class="price-anchor">
       <p class="pa-line">Ticket: <b>$1,000</b><span class="pa-dot">·</span>Bonuses included: <b>$3,000</b></p>
       <p class="pa-total">Total value <b>$4,000</b> — you pay <b class="pa-pay">$1,000</b></p>
-      <p class="pa-sub">One full day — everything below is included</p>
+      <p class="pa-sub">One full day — plus the bonuses below, when you register by August 16</p>
     </div>
-    <div class="cards cards--single">
+    <div class="cards">
       <div class="card">
         <span class="tag">By August 16</span>
         <h3>Register by August 16, 2026 — the FASTTRACK Bundle</h3>
@@ -366,6 +375,16 @@
         </ul>
         <p class="total-value"><b>$3,000</b> in bonuses — <span class="free">yours when you register by August 16</span></p>
         <p class="clock">⏰ Register by August 16 to claim the bundle</p>
+      </div>
+      <div class="card card--after">
+        <span class="tag">After August 16</span>
+        <h3>Register after August 16</h3>
+        <ul>
+          <li><span class="x">✕</span><span class="gone">Private 1-Hour Live Door Knocking Session with Monica</span></li>
+          <li><span class="x">✕</span><span class="gone">Exclusive Post-Event Group Zoom Implementation Session</span></li>
+        </ul>
+        <p class="total-value total-value--after">Event ticket only — <span class="free">no bonuses included</span></p>
+        <p class="clock">Same $1,000 — $3,000 less value</p>
       </div>
     </div>
     <p class="deadline-note">Our bonus deadlines are firm — the July 25 bundle has already closed. This one closes August 16.</p>
