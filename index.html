@@ -132,6 +132,16 @@
   .membership b{color:var(--slate)}
   .membership .plus{color:var(--red);font-weight:900}
 
+  /* 12-step plan callout */
+  .plan{
+    max-width:820px;margin:26px auto 0;background:var(--ground);
+    border:1px solid var(--line);border-left:5px solid var(--red);border-radius:14px;
+    padding:20px 24px;box-shadow:var(--shadow);
+  }
+  .plan-k{margin:0 0 8px;font-size:12.5px;font-weight:900;letter-spacing:1.5px;text-transform:uppercase;color:var(--red)}
+  .plan-v{margin:0;font-size:16px;font-weight:700;color:var(--slate-deep);line-height:1.55}
+  .plan-v b{color:var(--slate)}
+
   /* About Monica */
   .about{background:var(--surface)}
   .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;max-width:860px;margin:42px auto 0}
@@ -152,7 +162,9 @@
 
   /* Early-bird cards */
   .early{background:var(--surface)}
-  .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;max-width:860px;margin:40px auto 0}
+  .cards{display:grid;grid-template-columns:repeat(2,1fr);align-items:start;gap:22px;max-width:860px;margin:40px auto 0}
+  .cards--single{grid-template-columns:1fr;max-width:620px}
+  .deadline-note{max-width:620px;margin:16px auto 0;text-align:center;font-size:13.5px;color:var(--muted);line-height:1.5}
   .card{
     background:var(--ground);border:1px solid var(--line);border-radius:18px;
     padding:30px 28px;box-shadow:var(--shadow);position:relative;overflow:hidden;
@@ -174,6 +186,15 @@
   .total-value b{color:var(--red);font-size:20px}
   .total-value .free{display:block;font-weight:700;color:var(--slate);font-size:14px;margin-top:2px}
   .clock{font-size:14px;font-weight:800;color:var(--red);text-align:center;margin:6px 0 0;letter-spacing:.3px}
+  .card--after{background:var(--surface-2);box-shadow:none}
+  .card--after::before{background:var(--muted)}
+  .card--after .tag{background:var(--muted)}
+  .card--after h3,.card--after li{color:var(--muted)}
+  .card--after li b{color:var(--muted)}
+  .card--after .x{color:var(--muted);font-weight:900;flex:none}
+  .card--after .gone{text-decoration:line-through;text-decoration-color:var(--muted)}
+  .total-value--after{background:transparent;border-style:dashed;color:var(--muted)}
+  .total-value--after .free{color:var(--muted)}
   /* Anchored price block */
   .price-anchor{
     max-width:640px;margin:34px auto 0;text-align:center;
@@ -285,7 +306,7 @@
   <div class="wrap">
     <p class="eyebrow">Your Step-by-Step Guide</p>
     <h2 class="section">What You'll Build</h2>
-    <p class="subhead">Walk out with a complete, ready-to-run farming business — every system, script, and calendar done.</p>
+    <p class="subhead">Walk out with a complete, ready-to-run farming business — every system, script, and calendar done — plus the written <b>12-step plan</b> to implement it, in order, starting the very next morning.</p>
     <div class="grid">
       <div class="item"><span class="num">01</span><span class="tick">✓</span><span class="txt">A Farming Business Plan</span></div>
       <div class="item"><span class="num">02</span><span class="tick">✓</span><span class="txt">Choosing the Right Area</span></div>
@@ -299,6 +320,10 @@
       <div class="item"><span class="num">10</span><span class="tick">✓</span><span class="txt">Farming Lead Follow-Up</span></div>
       <div class="item"><span class="num">11</span><span class="tick">✓</span><span class="txt">Open Houses — Done Differently as a Farmer</span></div>
       <div class="item"><span class="num">12</span><span class="tick">✓</span><span class="txt">Commission: Get 6% Every Time</span></div>
+    </div>
+    <div class="plan">
+      <p class="plan-k">You leave with the plan — not just the notes</p>
+      <p class="plan-v">All 12 steps come home with you <b>in writing, in this exact order</b>. You'll know what to do first, what comes next, and what “done” looks like at every step — so there's no guessing where to start on Monday morning. <b>Work the plan one step at a time and your farm is built.</b></p>
     </div>
     <div class="membership">
       <span class="plus">PLUS</span> &nbsp;<b>A 1-Month Membership to Monica's exclusive “No Chai Samosa” group</b> — the private community where farmers share wins, scripts, and support.
@@ -336,37 +361,33 @@
     <p class="eyebrow">Register Early — The Sooner You Register, The More You Get</p>
     <h2 class="section">Register &amp; Get More</h2>
     <div class="price-anchor">
-      <p class="pa-line">Ticket: <b>$1,000</b><span class="pa-dot">·</span>Bonuses included: <b>$4,820</b></p>
-      <p class="pa-total">Total value <b>$5,820</b> — you pay <b class="pa-pay">$1,000</b></p>
-      <p class="pa-sub">One full day — everything below is included</p>
+      <p class="pa-line">Ticket: <b>$1,000</b><span class="pa-dot">·</span>Bonuses included: <b>$3,000</b></p>
+      <p class="pa-total">Total value <b>$4,000</b> — you pay <b class="pa-pay">$1,000</b></p>
+      <p class="pa-sub">One full day — plus the bonuses below, when you register by August 16</p>
     </div>
     <div class="cards">
       <div class="card">
-        <span class="tag">By July 25</span>
-        <h3>Register by July 25 — the FASTTRACK Success Bundle</h3>
+        <span class="tag">By August 16</span>
+        <h3>Register by August 16, 2026 — the FASTTRACK Bundle</h3>
         <ul>
-          <li><span class="tick">⭐</span><span><b>Private 1-Hour Live Door Knocking Session with Monica</b> <b style="color:var(--red)">(Value: $1,500)</b><br><span style="color:var(--muted);font-size:13.5px">Redeemable within one year in Etobicoke.</span></span></li>
-          <li><span class="tick">✓</span><span><b>Priority Seating</b> <b style="color:var(--red)">($150 Value)</b></span></li>
-          <li><span class="tick">✓</span><span><b>Farming 101 Workbook</b> before the event</span></li>
-          <li><span class="tick">✓</span><span><b>3 Months</b> of the Door Knocking App <b style="color:var(--red)">($300 Value)</b></span></li>
-          <li><span class="tick">✓</span><span><b>6 Months</b> in the No Chai Samosa Group <b style="color:var(--red)">($600 Value)</b></span></li>
-          <li><span class="tick">✓</span><span><b>Personality Assessment</b> + Results</span></li>
-          <li><span class="tick">✓</span><span><b>Free Leasing Course</b> <b style="color:var(--red)">($200 Value)</b></span></li>
-          <li><span class="tick">✓</span><span><b>30% Off</b> Listing &amp; Buyer Express Courses <b style="color:var(--red)">($570 Value)</b></span></li>
-          <li><span class="tick">✓</span><span><b>Exclusive Post-Event Group Zoom Implementation Session</b> <b style="color:var(--red)">($1,500 Value)</b> — after you've had time to apply what you learned, we meet as a group to review your progress, answer your questions, and work through any challenges</span></li>
+          <li><span class="tick">⭐</span><span><b>Private 1-Hour Live Door Knocking Session with Monica</b> <b style="color:var(--red)">($1,500 Value)</b><br><span style="color:var(--muted);font-size:13.5px">Redeemable within one year in Etobicoke.</span></span></li>
+          <li><span class="tick">⭐</span><span><b>Exclusive Post-Event Group Zoom Implementation Session</b> <b style="color:var(--red)">($1,500 Value)</b> — after you've had time to apply what you learned, we meet as a group to review your progress, answer your questions, and work through any challenges</span></li>
         </ul>
-        <p class="total-value">Over <b>$4,820</b> in value — <span class="free">yours when you register by July 25</span></p>
-        <p class="clock">⏰ Register by July 25 to claim the full bundle</p>
+        <p class="total-value"><b>$3,000</b> in bonuses — <span class="free">yours when you register by August 16</span></p>
+        <p class="clock">⏰ Register by August 16 to claim the bundle</p>
       </div>
-      <div class="card">
-        <span class="tag">By August 1</span>
-        <h3>Register by August 1, 2026</h3>
+      <div class="card card--after">
+        <span class="tag">After August 16</span>
+        <h3>Register after August 16</h3>
         <ul>
-          <li><span class="tick">✓</span><span><b>Exclusive Post-Event Group Zoom Implementation Session</b> — after you've had time to apply what you learned, we meet as a group to review your progress, answer your questions, and work through any challenges</span></li>
+          <li><span class="x">✕</span><span class="gone">Private 1-Hour Live Door Knocking Session with Monica</span></li>
+          <li><span class="x">✕</span><span class="gone">Exclusive Post-Event Group Zoom Implementation Session</span></li>
         </ul>
-        <p class="clock">⏰ Available to everyone who registers on or before August 1</p>
+        <p class="total-value total-value--after">Event ticket only — <span class="free">no bonuses included</span></p>
+        <p class="clock">Same $1,000 — $3,000 less value</p>
       </div>
     </div>
+    <p class="deadline-note">Our bonus deadlines are firm — the July 25 bundle has already closed. This one closes August 16.</p>
     <div class="cta-row">
       <a class="btn btn-primary" href="https://square.link/u/hlcxwXLn" target="_blank" rel="noopener noreferrer" onclick="if(typeof fbq!=='undefined')fbq('track','InitiateCheckout');">Reserve My Seat Now</a>
       <a class="btn btn-ghost" href="mailto:letsfarmwithmonicathapar@gmail.com?subject=Info%20Request" onclick="if(typeof fbq!=='undefined')fbq('track','Contact');">Request More Info</a>
