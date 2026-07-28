@@ -310,6 +310,41 @@
   .shot img{width:100%;height:auto;display:block;border-radius:18px;border:1px solid var(--line);box-shadow:var(--shadow);background:var(--surface-2)}
   .shot figcaption{margin-top:14px;text-align:center;font-size:15px;color:var(--muted);line-height:1.5}
 
+  /* Group-chat proof wall — the quote carries it, the screenshot backs it up */
+  .wa-wall{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;max-width:900px;margin:44px auto 0}
+  .wa{
+    margin:0;background:var(--ground);border:1px solid var(--line);border-radius:18px;
+    padding:26px 28px;box-shadow:var(--shadow);display:flex;flex-direction:column;
+  }
+  .wa-quote{margin:0;border-left:3px solid var(--green);padding-left:16px}
+  .wa-quote p{margin:0;font-size:16.5px;line-height:1.6}
+  .wa-quote p b{color:var(--slate-deep)}
+  .wa-meta{display:flex;align-items:center;gap:12px;margin-top:auto;padding-top:18px}
+  .wa-who{display:flex;flex-direction:column;min-width:0;flex:1}
+  .wa-name{font-weight:800;font-size:15px;color:var(--green)}
+  .wa-loc{font-size:13.5px;color:var(--muted);line-height:1.4}
+  .wa-reacts{
+    flex:none;background:var(--surface);border:1px solid var(--line);border-radius:999px;
+    padding:5px 11px;font-size:13px;font-weight:800;color:var(--slate-deep);white-space:nowrap;
+  }
+  .wa-view{
+    margin-top:16px;padding-top:14px;border:0;border-top:1px solid var(--line);background:none;
+    font:inherit;font-size:13.5px;font-weight:800;color:var(--blue-ink);text-align:left;
+    cursor:pointer;width:100%;
+  }
+  .wa-view:hover,.wa-view:focus-visible{color:var(--red)}
+  /* Screenshot lightbox */
+  .wa-box{border:0;padding:0;background:transparent;max-width:min(420px,90vw);overflow:visible}
+  .wa-box::backdrop{background:rgba(41,68,82,.74)}
+  .wa-box-inner{position:relative}
+  .wa-box img{display:block;width:100%;height:auto;border-radius:16px}
+  .wa-box .wa-fallback{margin:0;padding:40px 24px;background:var(--ground);border-radius:16px;text-align:center;color:var(--muted)}
+  .wa-close{
+    position:absolute;top:-16px;right:-16px;width:40px;height:40px;border:0;border-radius:50%;
+    background:var(--ground);color:var(--slate);font-size:22px;font-weight:900;line-height:1;
+    cursor:pointer;box-shadow:var(--shadow);
+  }
+
   footer{padding:40px 0 56px;text-align:center;color:var(--muted);font-size:13.5px}
   footer .brand{font-weight:800;color:var(--slate);letter-spacing:.3px}
   .ast{color:inherit;text-decoration:none;font-weight:700;vertical-align:super;font-size:.7em}
@@ -321,7 +356,7 @@
 
   @media (max-width:720px){
     section{padding:48px 0}
-    .grid,.cards,.who-grid,.details .wrap,.final-grid,.gallery-grid{grid-template-columns:1fr}
+    .grid,.cards,.who-grid,.details .wrap,.final-grid,.gallery-grid,.wa-wall{grid-template-columns:1fr}
     .stats{grid-template-columns:repeat(2,1fr)}
     .final h2{text-align:center}
     .final-grid img{max-width:280px}
@@ -568,6 +603,107 @@
 
 <hr class="rule">
 
+<section id="wins">
+  <div class="wrap">
+    <p class="eyebrow">Straight From The Group Chat</p>
+    <h2 class="section">The Day It Happened</h2>
+    <p class="subhead">Real messages from agents in Monica's farming community — sent the moment the system worked. First listings, exclusive signings, and 6%<a class="ast" href="#commission-note" aria-label="See commission disclaimer">*</a> commissions.</p>
+
+    <div class="wa-wall">
+
+      <figure class="wa">
+        <blockquote class="wa-quote">
+          <p>“<b>I GOT THE LISTING! At 6%! Signed both exclusive and mls!</b> 🥳 Thank you Monica Thapar for all your guidance! Our presentation had a lot answers that were taught in your class! 🙏”</p>
+        </blockquote>
+        <figcaption class="wa-meta">
+          <span class="wa-who">
+            <span class="wa-name">Saba</span>
+            <span class="wa-loc">Exclusive + MLS, signed at 6%</span>
+          </span>
+          <span class="wa-reacts">🔥 👏 👍 3</span>
+        </figcaption>
+        <button class="wa-view" type="button"
+          data-full="testimonials/saba.jpg"
+          data-alt="WhatsApp message from Saba announcing she signed a listing at 6%, both exclusive and MLS">View the original message ↗</button>
+      </figure>
+
+      <figure class="wa">
+        <blockquote class="wa-quote">
+          <p>“Thank you Monica Thapar … <b>today i got my first listing in my farm</b> 🙏”</p>
+        </blockquote>
+        <figcaption class="wa-meta">
+          <span class="wa-who">
+            <span class="wa-name">Harman</span>
+            <span class="wa-loc">First listing in his farm</span>
+          </span>
+          <span class="wa-reacts">❤️ 👍 🔥 30</span>
+        </figcaption>
+        <button class="wa-view" type="button"
+          data-full="testimonials/harman.jpg"
+          data-alt="WhatsApp message from Harman thanking Monica Thapar after getting his first listing in his farm">View the original message ↗</button>
+      </figure>
+
+      <figure class="wa">
+        <blockquote class="wa-quote">
+          <p>“Hello All, I'm so excited to announce that <b>my third listing in my farm (Woodland Hill-Newmarket) will hit the market next week.</b> What is really special about Amir? Nothing 😂. HARD WORK 💪 HARD WORK 💪 HARD WORK 💪”</p>
+        </blockquote>
+        <figcaption class="wa-meta">
+          <span class="wa-who">
+            <span class="wa-name">Amir Akbari</span>
+            <span class="wa-loc">Third farm listing · Woodland Hill, Newmarket</span>
+          </span>
+        </figcaption>
+        <button class="wa-view" type="button"
+          data-full="testimonials/amir-akbari.jpg"
+          data-alt="WhatsApp message from Amir Akbari standing beside his Coming Soon sign, announcing his third listing in his Newmarket farm">View the original message ↗</button>
+      </figure>
+
+      <figure class="wa">
+        <blockquote class="wa-quote">
+          <p>“Victory guys. Seller called me back. <b>We are signing the Exclusive Listing on Sunday for the entire summer.</b> The house is on a Main Street in my farm so I am going to get a lot of exposure with the sign. Hopefully another listing and a buyer off of it! 🎉”</p>
+        </blockquote>
+        <figcaption class="wa-meta">
+          <span class="wa-who">
+            <span class="wa-name">NAME NEEDED</span>
+            <span class="wa-loc">Exclusive listing on a main street in his farm</span>
+          </span>
+          <span class="wa-reacts">❤️ 🔥 💪 13</span>
+        </figcaption>
+        <button class="wa-view" type="button"
+          data-full="testimonials/exclusive-summer.jpg"
+          data-alt="WhatsApp message announcing an exclusive listing signed for the entire summer on a main street in the agent's farm">View the original message ↗</button>
+      </figure>
+
+      <figure class="wa">
+        <blockquote class="wa-quote">
+          <p>“As a newer agent this is exciting: <b>My first listing</b> 😀”</p>
+        </blockquote>
+        <figcaption class="wa-meta">
+          <span class="wa-who">
+            <span class="wa-name">Gorette Marques</span>
+            <span class="wa-loc">First listing · 136 Bayview Ave, Georgina</span>
+          </span>
+          <span class="wa-reacts">❤️ 👍 👏 20</span>
+        </figcaption>
+        <button class="wa-view" type="button"
+          data-full="testimonials/gorette-marques.jpg"
+          data-alt="WhatsApp message from Gorette Marques sharing the open house flyer for her first listing in Georgina">View the original message ↗</button>
+      </figure>
+
+    </div>
+  </div>
+</section>
+
+<dialog class="wa-box" id="wa-box" aria-label="Original message screenshot">
+  <div class="wa-box-inner">
+    <button class="wa-close" type="button" aria-label="Close">×</button>
+    <img alt="">
+    <p class="wa-fallback" hidden>This screenshot isn't available right now.</p>
+  </div>
+</dialog>
+
+<hr class="rule">
+
 <section class="early">
   <div class="wrap">
     <p class="eyebrow">Real Agents · Real Farms</p>
@@ -644,6 +780,36 @@
   <p>Fast Track Farming · Tuesday, September 22, 2026 · Venu Event Space</p>
   <p class="fineprint" id="commission-note">*Commission and remuneration rates are not fixed, standardized, or set by law, and are fully negotiable between a client and a brokerage. The 6% referenced throughout reflects Monica Thapar's own practice and results in her market. Fast Track Farming teaches an approach to presenting and holding your fee — it is not a guarantee that any participant will obtain any particular rate, listing, or level of income. Results depend on your market, your brokerage's policies, and the effort you put in. Nothing on this page is legal, financial, or brokerage-compliance advice.</p>
 </footer>
+
+<script>
+  // Group-chat proof wall — open the original screenshot in a lightbox
+  (function(){
+    var box = document.getElementById('wa-box');
+    if(!box || typeof box.showModal !== 'function') return;
+    var img = box.querySelector('img');
+    var fallback = box.querySelector('.wa-fallback');
+
+    // If a screenshot is missing, show a note instead of a broken image
+    img.addEventListener('error', function(){
+      img.hidden = true;
+      fallback.hidden = false;
+    });
+
+    document.querySelectorAll('.wa-view').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        img.hidden = false;
+        fallback.hidden = true;
+        img.alt = btn.dataset.alt || '';
+        img.src = btn.dataset.full;
+        box.showModal();
+      });
+    });
+
+    box.querySelector('.wa-close').addEventListener('click', function(){ box.close(); });
+    // Clicking the backdrop (outside the image) closes it too
+    box.addEventListener('click', function(e){ if(e.target === box) box.close(); });
+  })();
+</script>
 
 </body>
 </html>
