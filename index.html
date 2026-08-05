@@ -115,7 +115,8 @@
   .btn-ghost{background:transparent;color:var(--slate);border:2px solid var(--slate)}
   .btn-ghost:hover{background:var(--slate);color:var(--ground);transform:translateY(-2px)}
   /* Lowest-priority action in a row — present, but never competing with the two above it */
-  .btn-soft{background:var(--surface);color:var(--slate-deep);border:1px solid var(--line)}
+  /* Sits on --surface sections, so it fills white to lift off them; --muted keeps the edge at 3:1 */
+  .btn-soft{background:var(--ground);color:var(--slate-deep);border:1px solid var(--muted)}
   .btn-soft:hover{background:var(--surface-2);border-color:var(--slate);transform:translateY(-2px)}
   /* Three-button rows tighten up so the trio still holds one line on desktop */
   .cta-row--trio{gap:12px}
