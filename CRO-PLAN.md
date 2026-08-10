@@ -282,7 +282,7 @@ satisfies the "strongest proof appears late" half of this item.
 ---
 
 ## 8. Make the bonuses feel credible — Tier 2
-`[ ]` **Not started**
+`[x]` **Complete**
 
 **Issue:** the `$3,000` bonus valuation and `$4,000` total value invite questions about how
 those numbers were set.
@@ -293,6 +293,28 @@ those numbers were set.
 - Keep the `$1,500 / $1,500` figures **only** if those services genuinely sell separately at
   those prices — needs Ryan's confirmation
 - Remove the expired July 25 bundle reference (`.deadline-note` in the Register section)
+
+**Shipped.** Both bonuses now lead with the practical benefit; the dollar value follows on a
+muted meta line rather than sitting beside the title. Ryan confirmed both services genuinely
+sell at $1,500, so the figures were retained.
+
+Facts confirmed by Ryan and now stated on the page, which is what makes the values credible:
+
+| | Door-knocking session | Zoom implementation session |
+|---|---|---|
+| Format | One-on-one with Monica | Group, on Zoom |
+| Where | Monica's own Etobicoke farm | — |
+| Attendee role | Knocks doors themselves, gets live feedback | Brings their own farm's challenges |
+| Timing | Redeemable within one year | Four weeks after the event, 90 minutes |
+
+**Copy.** Ryan chose option 1A for the door-knocking session and 2B for the Zoom session, from
+three drafted per bonus. 1A's closing line — *"One hour in the field teaches what a day in a
+classroom can't"* — was replaced at Ryan's direction because it diminished the workshop being
+sold. It now reads *"It is where everything you build at the workshop meets a real doorstep,"*
+positioning the bonus as application of the day rather than a substitute for it.
+
+**The July 25 line** now reads "Bonus deadlines are firm — this bundle closes August 16",
+keeping the firmness without referencing an expired offer.
 
 ---
 
