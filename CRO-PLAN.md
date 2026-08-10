@@ -167,13 +167,37 @@ This is a marketing judgment call for Ryan, not a technical one.
 ---
 
 ## 5. Show what happens during the day — Tier 2
-`[ ]`
+`[x]` Done — one open question: is lunch provided?
 
 **Issue:** 12 topics are listed but nothing shows how 8 hours are structured.
 
 **Change:** add a timed agenda — farm plan → area selection → brand & marketing calendar → door-knocking demonstrations → lead tracking → follow-up → open houses → fee conversation → 30-day implementation plan. Include breaks and lunch.
 
 **Also covers:** the "complete event details" gap — the page currently gives only "Venu Event Space" with no street address. Add full address, city, parking.
+
+**Completed.** New `#agenda` section after the curriculum, built from Ryan's
+*Farming 101 – FASTTRACK Proposed Agenda*. 17 rows on a two-column timeline, with the two
+breaks and lunch styled as muted rest rows. Times derived from the source document's minute
+counts, rounded, with a note that they are approximate.
+
+Event details bar went from three columns to four: Place now carries the full street address
+(2800 Hwy 7, Vaughan, ON L4K 1W8) and a new Parking column reads "Free & ample on site".
+
+**Deliberately omitted from the public agenda** — internal planning items from the source
+document that would read badly to a prospective buyer, or that are logistics rather than
+content:
+- **"Course Offer" ×4** — publishing that the day contains four sales pitches would work
+  directly against registration. Omitted; flagged to Ryan.
+- **Sponsor slots** attached to the three role-play blocks.
+- **"Stand-Up Exercise"** labels — internal shorthand for delivery format.
+
+Nothing was invented: every published row maps to a real item in the source agenda. The
+review's suggested "30-day implementation plan" was *not* added, because the source agenda
+does not contain one — it closes with mindset and next steps.
+
+**Open question:** the source agenda has a 30–45 minute lunch block but does not say whether
+lunch is provided or attendees are on their own. The page currently says only "Lunch" and
+claims nothing. Reco 11's FAQ needs the real answer.
 
 ---
 
