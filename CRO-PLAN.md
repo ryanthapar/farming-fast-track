@@ -30,7 +30,7 @@ Each item carries a **Tier** annotation for effort/risk. That's information, not
 | 5 | Show what happens during the day | 2 | `[x]` |
 | 6 | Shorten and reorganize the page | 2 | `[x]` |
 | 7 | Strengthen the social proof | 2 | `[ ]` |
-| 8 | Make the bonuses feel credible | 2 | `[ ]` |
+| 8 | Make the bonuses feel credible | 2 | `[x]` |
 | 9 | Replace the email link with an enquiry form | 3 | `[ ]` mostly pre-done |
 | 10 | Improve the checkout handoff | 3 | `[ ]` Square-side |
 | 11 | Add an FAQ section | 2 | `[ ]` |
@@ -41,7 +41,7 @@ Each item carries a **Tier** annotation for effort/risk. That's information, not
 
 ### What shipped on `claude/landing-page-edits-w5j1g9`
 
-Recos 1–6, in twelve commits. Net effect on the page:
+Recos 1–6 and 8. Net effect on the page:
 
 - Hero leads with the outcome, not the event name; event name moved to the eyebrow
 - Credibility strip and Renee Proulx's testimonial now sit directly below the hero
@@ -49,6 +49,7 @@ Recos 1–6, in twelve commits. Net effect on the page:
 - 6% reframed throughout as Monica's own result rather than the buyer's guarantee
 - New one-day agenda section; venue address and parking added to the details bar
 - Photo gallery moved out of last position; page 11.5% shorter by density
+- Bonuses lead with what the attendee gets, with the expired July 25 reference removed
 
 ### Current section order
 
