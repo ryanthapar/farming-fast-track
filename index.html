@@ -309,6 +309,25 @@
   .ag--rest .ag-w{color:var(--muted);font-weight:800;text-transform:uppercase;letter-spacing:1px;font-size:13.5px}
   .agenda-note{max-width:780px;margin:18px auto 0;font-size:13.5px;color:var(--muted);text-align:center;line-height:1.55}
 
+  /* FAQ */
+  .faq-list{max-width:780px;margin:28px auto 0}
+  .faq{border-bottom:1px solid var(--line)}
+  .faq:first-child{border-top:1px solid var(--line)}
+  .faq summary{
+    cursor:pointer;list-style:none;position:relative;padding:15px 40px 15px 2px;
+    font-size:17px;font-weight:800;color:var(--slate-deep);line-height:1.4;
+  }
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{
+    content:"+";position:absolute;right:8px;top:12px;
+    font-size:24px;font-weight:800;color:var(--green);line-height:1;
+  }
+  .faq[open] summary::after{content:"\2013"}
+  .faq summary:hover,.faq summary:focus-visible{color:var(--slate)}
+  .faq .a{margin:-2px 0 16px;padding-right:40px;font-size:16px;line-height:1.6;color:var(--body)}
+  .faq .a b{color:var(--slate-deep)}
+  .faq-foot{max-width:780px;margin:22px auto 0;text-align:center;font-size:14.5px;color:var(--muted);line-height:1.55}
+
   .details{background:var(--slate);color:#fff}
   .details .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center}
   .detail .k{text-transform:uppercase;letter-spacing:2px;font-size:12px;font-weight:800;opacity:.75;margin:0 0 8px}
@@ -731,6 +750,67 @@
 </section>
 
 <hr class="rule">
+
+<section id="faq">
+  <div class="wrap">
+    <p class="eyebrow">Before You Register</p>
+    <h2 class="section">Frequently Asked Questions</h2>
+    <div class="faq-list">
+
+      <details class="faq">
+        <summary>Where exactly is it, and is parking included?</summary>
+        <p class="a">Venu Event Space, <b>2800 Hwy 7, Vaughan, ON L4K 1W8</b>. Parking is <b>free and ample</b> on site — no permits, no meters, no hunting for a spot.</p>
+      </details>
+
+      <details class="faq">
+        <summary>Are lunch and refreshments provided?</summary>
+        <p class="a"><b>Yes — lunch is provided.</b> There are also two breaks built into the day, one mid-morning and one mid-afternoon.</p>
+      </details>
+
+      <details class="faq">
+        <summary>What should I bring?</summary>
+        <p class="a">Just your <b>laptop</b>. Your workbook and pen are provided — you'll be building your plan on the page as the day goes.</p>
+      </details>
+
+      <details class="faq">
+        <summary>Do I need to have a farming area picked already?</summary>
+        <p class="a">No. <b>Choosing the right area is step 2 of the day</b>, and Monica walks you through how to do it. It does help to arrive with <b>two or three areas in mind</b> — you'll get more out of that session if you have something concrete to work with.</p>
+      </details>
+
+      <details class="faq">
+        <summary>Is this suitable for newer agents?</summary>
+        <p class="a">Yes. The day is built for <b>all experience levels</b> — brand new licensees and seasoned agents both. Farming doesn't require a database or years of past clients; it requires a defined area and a system, which is exactly what you'll build.</p>
+      </details>
+
+      <details class="faq">
+        <summary>Can teams or brokerage groups attend?</summary>
+        <p class="a">Yes. If you'd like to bring a team or a group from your brokerage, <b>reach out to us about brokerage programs</b> — use the Request More Info form and we'll get back to you.</p>
+      </details>
+
+      <details class="faq">
+        <summary>What materials are included?</summary>
+        <p class="a">Your written <b>12-step farming plan</b> in order, <b>door-knocking scripts</b>, a <b>flyers and giveaways calendar</b>, plus your workbook and pen. You also get a <b>1-month membership to Monica's private "No Chai Samosa" group</b>, where farmers share wins, scripts and support.</p>
+      </details>
+
+      <details class="faq">
+        <summary>Can I cancel or transfer my ticket?</summary>
+        <p class="a"><b>No.</b> Tickets are non-refundable and cannot be transferred to another person or another date. If you're not certain the workshop is right for you, <b>book a 15-minute call with Monica before you register</b> — it's better to ask first than to hold a seat you can't use.</p>
+      </details>
+
+      <details class="faq">
+        <summary>How and when do I redeem the bonuses?</summary>
+        <p class="a"><b>We reach out to you after the event</b> to book your private door-knocking session with Monica — that one is redeemable within a year, in Etobicoke. The group Zoom implementation session runs <b>four weeks after the event</b>, and the link is sent to you <b>five days beforehand</b>.</p>
+      </details>
+
+      <details class="faq">
+        <summary>Is a payment plan available?</summary>
+        <p class="a">No — there are no payment plans. Registration is paid in full at checkout: <b>$1,000 + HST</b>, $1,130 in total.</p>
+      </details>
+
+    </div>
+    <p class="faq-foot">Still have a question? <b>Request more info</b> using the form above, or book a 15-minute call with Monica before you register.</p>
+  </div>
+</section>
 
 <section class="final">
   <div class="wrap">

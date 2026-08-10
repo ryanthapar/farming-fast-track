@@ -33,7 +33,7 @@ Each item carries a **Tier** annotation for effort/risk. That's information, not
 | 8 | Make the bonuses feel credible | 2 | `[x]` |
 | 9 | Replace the email link with an enquiry form | 3 | `[ ]` mostly pre-done |
 | 10 | Improve the checkout handoff | 3 | `[ ]` Square-side |
-| 11 | Add an FAQ section | 2 | `[ ]` |
+| 11 | Add an FAQ section | 2 | `[x]` |
 | 12 | Add a persistent mobile registration button | 3 | `[ ]` |
 | 13 | Strengthen measurement and follow-up | 3 | `[ ]` |
 | A1 | Logo has a baked-in black background | 1 | `[ ]` deferred |
@@ -41,7 +41,7 @@ Each item carries a **Tier** annotation for effort/risk. That's information, not
 
 ### What shipped on `claude/landing-page-edits-w5j1g9`
 
-Recos 1–6 and 8. Net effect on the page:
+Recos 1–6, 8 and 11. Net effect on the page:
 
 - Hero leads with the outcome, not the event name; event name moved to the eyebrow
 - Credibility strip and Renee Proulx's testimonial now sit directly below the hero
@@ -50,6 +50,7 @@ Recos 1–6 and 8. Net effect on the page:
 - New one-day agenda section; venue address and parking added to the details bar
 - Photo gallery moved out of last position; page 11.5% shorter by density
 - Bonuses lead with what the attendee gets, with the expired July 25 reference removed
+- New FAQ section answering all ten of the review's questions
 
 ### Current section order
 
@@ -66,7 +67,7 @@ Recos 1–6 and 8. Net effect on the page:
 11. Details bar (`.details--slate`)
 12. From Agents Who Farm (testimonials + video)
 13. Happy Farming Students
-14. *(FAQ slot — reco 11)*
+14. Frequently Asked Questions (`#faq`)
 15. Ready to Farm Your Area? (`.final`)
 
 ---
@@ -352,24 +353,36 @@ Program)", adds a quantity step, and reveals $1,130 only at the final stage.
 ---
 
 ## 11. Add a frequently asked questions section — Tier 2
-`[ ]` **Not started**
+`[x]` **Complete**
 
-**Change:** a concise FAQ. Answers already known are marked:
+**Shipped.** New `#faq` section between "Happy Farming Students" and the final CTA, built as
+native `<details>`/`<summary>` accordions — no JavaScript, keyboard accessible, and collapsed
+by default so ten questions cost ~500px rather than ~1,600px.
 
-| Question | Answer status |
+All ten answers confirmed by Ryan:
+
+| Question | Answer |
 |---|---|
-| Exact venue address, is parking included? | **Known** — 2800 Hwy 7, Vaughan; free & ample on site |
-| Are lunch and refreshments provided? | **Known** — lunch is provided |
-| What should attendees bring? | Needs Ryan |
-| Do attendees need a farming area selected already? | Needs Ryan |
-| Is it appropriate for newer agents? | Needs Ryan |
-| Can teams or brokerage groups attend? | Needs Ryan |
-| What materials are included? | Partly known — written 12-step plan, scripts, calendar |
-| Cancellation / ticket-transfer policy? | Needs Ryan |
-| How and when are bonuses redeemed? | Partly known — door-knocking session redeemable within one year in Etobicoke |
-| Is a payment plan available? | Needs Ryan |
+| Venue and parking | 2800 Hwy 7, Vaughan; free and ample on site |
+| Lunch and refreshments | Lunch provided; two breaks built in |
+| What to bring | Laptop only — workbook and pen provided |
+| Farming area needed beforehand? | No, choosing one is step 2; helps to arrive with 2–3 in mind |
+| Suitable for newer agents? | Yes — all experience levels, brand new to seasoned |
+| Teams / brokerage groups | Yes; reach out about brokerage programs |
+| Materials included | 12-step plan, scripts, flyers/giveaways calendar, workbook and pen, 1-month "No Chai Samosa" membership |
+| Cancellation / transfer | **Non-refundable and non-transferable** |
+| Bonus redemption | Team reaches out post-event to book the door-knocking session; Zoom link sent 5 days before the session |
+| Payment plans | None — paid in full at checkout |
 
-Insert between "Happy Farming Students" and the final CTA.
+**Judgment call on the cancellation answer.** A flat "no refunds, no transfers" is friction, and
+this reco exists to reduce friction. It is stated plainly rather than softened — burying it
+would just move the problem to the customer-service inbox — but the answer pairs it with the
+existing 15-minute call with Monica: *"If you're not certain the workshop is right for you,
+book a call before you register."* That turns a dead end into a next step without misrepresenting
+the policy.
+
+**Cost to page height:** 13,109px was the pre-reco-6 baseline; the page is now 12,820px —
+still below where it started, with a whole FAQ added.
 
 ---
 
