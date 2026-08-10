@@ -17,7 +17,7 @@ ship them rather than holding for a formal A/B test.
 ---
 
 ## 1. Rebuild the hero around the outcome — Tier 1
-`[ ]`
+`[x]` Done — see "Completed" note at the end of this item.
 
 **Issue:** "Fast Track Farming" is the event name, not an outcome. A visitor arriving from an ad has to interpret the offer before knowing if it's relevant.
 
@@ -31,6 +31,17 @@ ship them rather than holding for a formal A/B test.
 - Keep "Fast Track Farming" as branding above or below the H1, not as the H1
 
 **Touches:** `index.html` lines 343–365 (hero header)
+
+**Completed.** Hero now runs eyebrow → outcome H1 → deliverables sub → date → venue+price
+→ CTA → reassurance line. The four badge pills were removed; their content is carried by the
+reassurance line and the venue/price line. H1 resized to `clamp(34px,5.5vw,60px)` — the old
+`clamp(46px,9vw,92px)` was set for a two-word title. Verified at 1280px and 390px.
+
+Deliberately **not** changed, as they belong to other recos: the price still reads `$1,000`
+(reco 3) and the secondary "See What's Inside" button was kept.
+
+Side effect to be aware of: the replaced lead paragraph was the hero's only 6% mention, so
+that claim is now gone from the hero. Reco 4 still owns the four remaining locations.
 
 ---
 
@@ -54,13 +65,16 @@ ship them rather than holding for a formal A/B test.
 
 | Line | Location | Current |
 |---|---|---|
-| 350 | Hero badge pill | `💵 $1,000 per seat` |
-| 458 | "Who This Is For" close | `ready to invest $1,000` |
-| 495 | Register — price anchor | `Ticket: $1,000` |
-| 496 | Register — total value | `you pay $1,000` |
-| 518 | "After August 16" card | `Same $1,000 — $3,000 less value` |
+| 357 | Hero venue/price line | `Venu Event Space, Vaughan · $1,000 per seat` |
+| 457 | "Who This Is For" close | `ready to invest $1,000` |
+| 494 | Register — price anchor | `Ticket: $1,000` |
+| 495 | Register — total value | `you pay $1,000` |
+| 517 | "After August 16" card | `Same $1,000 — $3,000 less value` |
 
-Plus a price line beside each `Reserve My Seat` button (lines 361, 523, 625).
+Plus a price line beside each registration button (lines 359, 522, 624).
+
+*Line numbers refreshed after reco 1. The hero badge pill that used to hold the price is gone;
+the hero price now lives in the venue line.*
 
 **Open decision:** whether to show the full `$1,000 + HST ($1,130)` in the Register price anchor only, keeping `$1,000 + HST` everywhere else. Recommended.
 
