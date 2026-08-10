@@ -46,7 +46,7 @@ that claim is now gone from the hero. Reco 4 still owns the four remaining locat
 ---
 
 ## 2. Place Monica's credibility near the top — Tier 1
-`[x]` Done — one open follow-up: Renee's photo.
+`[x]` Done.
 
 **Issue:** visitors scroll a long way before learning why Monica can command $1,000.
 
@@ -66,10 +66,8 @@ Decisions taken:
   already works. The `.about-note` text is now duplicated between the About section and the
   footer — also for reco 6 to consolidate.
 
-**Open follow-up:** Renee's photo. The card currently shows an `RP` initials avatar in the
-`.proof-avatar` slot. Swapping it for a real photo is a one-line change — replace the `<div
-class="proof-avatar">RP</div>` with `<img class="proof-avatar" src="..." alt="Renee Proulx">`;
-the CSS already handles sizing and cropping.
+**Photo:** supplied by Ryan and committed as `renee-proulx.jpg` — cropped from a 748px square
+headshot to head-and-shoulders and resized to 320px so it reads clearly in the 74px circle.
 
 **Note:** the page uses `*` for two different disclaimers — the commission note in the footer
 and the Etobicoke sourcing note inside the About section. That collision is pre-existing, not
