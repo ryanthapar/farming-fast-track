@@ -167,7 +167,7 @@ This is a marketing judgment call for Ryan, not a technical one.
 ---
 
 ## 5. Show what happens during the day — Tier 2
-`[x]` Done — one open question: is lunch provided?
+`[x]` Done.
 
 **Issue:** 12 topics are listed but nothing shows how 8 hours are structured.
 
@@ -195,9 +195,8 @@ Nothing was invented: every published row maps to a real item in the source agen
 review's suggested "30-day implementation plan" was *not* added, because the source agenda
 does not contain one — it closes with mindset and next steps.
 
-**Open question:** the source agenda has a 30–45 minute lunch block but does not say whether
-lunch is provided or attendees are on their own. The page currently says only "Lunch" and
-claims nothing. Reco 11's FAQ needs the real answer.
+**Lunch:** confirmed by Ryan as provided. The agenda row reads "Lunch — provided" and the note
+below the timeline states it explicitly. Reco 11's FAQ should carry the same answer.
 
 ---
 
