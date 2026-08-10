@@ -115,7 +115,7 @@ final stage. The page is now honest about it; the checkout is not yet.
 ---
 
 ## 4. Reframe the 6% commission language — Tier 1
-`[~]` **Deferred — decision pending with Ryan.** Reviewed together Aug 10; coming back to it.
+`[x]` Done — Ryan chose the middle path.
 
 **Issue:** the body promises signing every listing at 6% while the footer disclaimer says no rate is guaranteed. The two fight each other.
 
@@ -163,6 +163,32 @@ guarantee problem is sharpest. The meta descriptions should follow whichever way
 copy goes.
 
 This is a marketing judgment call for Ryan, not a technical one.
+
+### Completed — middle path, as recommended
+
+Ryan chose option 2. 6% stays on the page, reframed as Monica's own result rather than the
+buyer's guarantee. Final copy:
+
+| Where | Now reads |
+|---|---|
+| Curriculum step 12 | **Presenting Your Value & Holding Your Fee** (full rename) |
+| "Hold your commission" card | *"Step 12 is that exact conversation — the one Monica uses to sign at 6%\*, and how to hold your own fee."* |
+| Final CTA | *"…the fee conversation Monica uses to sign at 6%\* — and how to hold your own."* |
+| `<meta name="description">` | *"…the fee conversation Monica uses to sign at 6%."* |
+| `<meta property="og:description">` | *"…the fee conversation Monica uses to sign at 6%."* |
+
+Step 12 got the review's full rename rather than the middle path: every other curriculum item
+names a skill or deliverable, so a promise about the buyer's future rate was the sharpest
+version of the guarantee problem and the most out of place in that list.
+
+A `*` disclaimer link was added to the "hold your commission" card, which previously asserted
+6% with no pointer to the footnote. Both body mentions now link to `#commission-note`.
+
+The footer disclaimer is unchanged and now agrees with the body copy: it already said Fast
+Track Farming "teaches an approach to presenting and holding your fee."
+
+**Remaining 6% mentions:** four (two body, two meta), all framed as Monica's practice, plus the
+footer disclaimer. No unqualified promise survives.
 
 ---
 
