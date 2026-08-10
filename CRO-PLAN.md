@@ -46,13 +46,34 @@ that claim is now gone from the hero. Reco 4 still owns the four remaining locat
 ---
 
 ## 2. Place Monica's credibility near the top — Tier 1
-`[ ]`
+`[x]` Done — one open follow-up: Renee's photo.
 
 **Issue:** visitors scroll a long way before learning why Monica can command $1,000.
 
 **Change:** compact credibility strip directly below the hero — `10+ yrs #1 REALTOR® in Etobicoke` · `1,700+ homes sold` · `$1B+ career volume` · `Top 0.1% of TRREB`. Follow with **one** strong testimonial carrying name, brokerage, photo and a specific result (Renee Proulx's $1M is the strongest candidate).
 
-**Touches:** new section after line 365; stats currently live at lines 470–477
+**Touches:** new `.cred` and `.proof` sections directly after `</header>`
+
+**Completed.** Four-stat strip on a tinted band directly below the hero, followed by Renee
+Proulx's testimonial in a card. 4-up on desktop, 2×2 on mobile.
+
+Decisions taken:
+- **About section left untouched** — its six-stat block still stands, so four numbers now
+  appear twice on the page. Deliberate; reco 6 resolves it.
+- **Sourcing notes moved to the footer** rather than sitting near the hero. The `†` (Etobicoke
+  ranking) and `‡` (career totals) markers anchor down to `#source-etobicoke` and
+  `#source-career` in the footer fineprint, matching how the existing `*` commission note
+  already works. The `.about-note` text is now duplicated between the About section and the
+  footer — also for reco 6 to consolidate.
+
+**Open follow-up:** Renee's photo. The card currently shows an `RP` initials avatar in the
+`.proof-avatar` slot. Swapping it for a real photo is a one-line change — replace the `<div
+class="proof-avatar">RP</div>` with `<img class="proof-avatar" src="..." alt="Renee Proulx">`;
+the CSS already handles sizing and cropping.
+
+**Note:** the page uses `*` for two different disclaimers — the commission note in the footer
+and the Etobicoke sourcing note inside the About section. That collision is pre-existing, not
+introduced here, and is worth cleaning up in reco 6.
 
 ---
 

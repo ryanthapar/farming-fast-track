@@ -93,6 +93,26 @@
   .hero .when{font-size:clamp(19px,3.2vw,24px);font-weight:800;color:var(--slate-deep);margin:26px 0 4px;text-wrap:balance}
   .hero .where{font-size:17px;font-weight:700;color:var(--body);margin:0 0 2px}
   .reassure{margin:24px 0 0;font-size:14.5px;font-weight:700;color:var(--muted);text-wrap:balance}
+
+  /* Credibility strip + lead testimonial */
+  .cred{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:28px 0}
+  .cred-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;max-width:900px;margin:0 auto;text-align:center}
+  .cred-item .n{margin:0;font-size:clamp(24px,3.4vw,32px);font-weight:900;color:var(--slate);line-height:1}
+  .cred-item .l{margin:7px 0 0;font-size:13.5px;font-weight:700;color:var(--muted);line-height:1.35}
+  .proof{padding:36px 0 44px}
+  .proof-card{
+    max-width:760px;margin:0 auto;display:flex;gap:22px;align-items:center;
+    background:var(--surface);border:1px solid var(--line);border-radius:18px;
+    padding:24px 26px;box-shadow:var(--shadow);
+  }
+  .proof-avatar{
+    width:74px;height:74px;flex:0 0 74px;border-radius:50%;object-fit:cover;
+    background:var(--slate);color:#fff;display:flex;align-items:center;justify-content:center;
+    font-weight:900;font-size:23px;letter-spacing:.5px;
+  }
+  .proof-card figcaption{margin:0}
+  .proof-q{margin:0;font-size:17.5px;color:var(--body);line-height:1.55}
+  .proof-by{margin:11px 0 0;font-size:14px;font-weight:800;color:var(--slate-deep)}
   .badges{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:22px 0 6px}
   .pill{
     display:inline-flex;align-items:center;gap:8px;background:var(--surface);
@@ -334,6 +354,8 @@
   @media (max-width:720px){
     section{padding:48px 0}
     .grid,.cards,.who-grid,.details .wrap,.final-grid,.gallery-grid{grid-template-columns:1fr}
+    .cred-grid{grid-template-columns:repeat(2,1fr);gap:24px}
+    .proof-card{flex-direction:column;text-align:center;padding:24px 20px}
     .stats{grid-template-columns:repeat(2,1fr)}
     .final h2{text-align:center}
     .final-grid img{max-width:280px}
@@ -362,6 +384,41 @@
     <p class="reassure">In person with Monica Thapar &nbsp;·&nbsp; Written materials included &nbsp;·&nbsp; Early-registration bonuses available until August 16</p>
   </div>
 </header>
+
+<section class="cred" aria-label="Monica Thapar's track record">
+  <div class="wrap">
+    <div class="cred-grid">
+      <div class="cred-item">
+        <p class="n">10+ yrs</p>
+        <p class="l">#1 REALTOR® in Etobicoke<a class="ast" href="#source-etobicoke" aria-label="See sourcing note">†</a></p>
+      </div>
+      <div class="cred-item">
+        <p class="n">1,700+</p>
+        <p class="l">Career homes sold<a class="ast" href="#source-career" aria-label="See sourcing note">‡</a></p>
+      </div>
+      <div class="cred-item">
+        <p class="n">$1B+</p>
+        <p class="l">Career sales volume<a class="ast" href="#source-career" aria-label="See sourcing note">‡</a></p>
+      </div>
+      <div class="cred-item">
+        <p class="n">Top 0.1%</p>
+        <p class="l">of TRREB REALTORS®</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="proof">
+  <div class="wrap">
+    <figure class="proof-card">
+      <div class="proof-avatar" aria-hidden="true">RP</div>
+      <figcaption>
+        <p class="proof-q">“I made <b>$1 million in the last two years</b> with a huge thanks to your door knocking/farming classes and coaching!”</p>
+        <p class="proof-by">— Renee Proulx &nbsp;·&nbsp; RE/MAX West</p>
+      </figcaption>
+    </figure>
+  </div>
+</section>
 
 <hr class="rule">
 
@@ -652,7 +709,7 @@
 <footer>
   <p class="brand">Let's Farm with Monica Thapar</p>
   <p>Fast Track Farming · Tuesday, September 22, 2026 · Venu Event Space</p>
-  <p class="fineprint" id="commission-note">*Commission and remuneration rates are not fixed, standardized, or set by law, and are fully negotiable between a client and a brokerage. The 6% referenced throughout reflects Monica Thapar's own practice and results in her market. Fast Track Farming teaches an approach to presenting and holding your fee — it is not a guarantee that any participant will obtain any particular rate, listing, or level of income. Results depend on your market, your brokerage's policies, and the effort you put in. Nothing on this page is legal, financial, or brokerage-compliance advice.</p>
+  <p class="fineprint" id="commission-note">*Commission and remuneration rates are not fixed, standardized, or set by law, and are fully negotiable between a client and a brokerage. The 6% referenced throughout reflects Monica Thapar's own practice and results in her market. Fast Track Farming teaches an approach to presenting and holding your fee — it is not a guarantee that any participant will obtain any particular rate, listing, or level of income. Results depend on your market, your brokerage's policies, and the effort you put in. Nothing on this page is legal, financial, or brokerage-compliance advice.<br><br><span id="source-etobicoke">†Based on 'All Agents Totals Combined For Sold Properties' total listed &amp; sold units in Etobicoke out of 75,496 agents, as reported by independent research company R E Stats Inc. &amp; sourced from TRREB (The Toronto Regional Real Estate Board) as of May 31, 2025.</span><br><span id="source-career">‡Career totals as of June 2026. Homes sold and sales volume reflect Monica Thapar's combined representation of both buyers and sellers.</span></p>
 </footer>
 
 </body>
