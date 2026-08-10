@@ -219,6 +219,24 @@ the hero price now lives in the venue line.*
 
 ---
 
+## Additional items — not from the review
+
+Things spotted while working the list. Deferred by choice, not oversight.
+
+### A1. Logo has a baked-in black background — Tier 1
+`[ ]` **Deferred — fix later, confirmed with Ryan**
+
+The hero logo (inline base64 PNG, `class="logo"`) renders as the *Let's Farm with Monica
+Thapar* cloud sitting on a solid black rectangle instead of on the page background. The PNG
+has black baked in rather than an alpha channel. Pre-existing — it is on the live page today
+and was not introduced by any reco.
+
+**Fix:** replace with a transparent-background PNG or SVG of the same logo. If no clean
+source file exists, the black can be keyed out, though edge quality around the drop shadow
+will need a look.
+
+---
+
 ## 14. Final review — after all items are complete
 `[ ]`
 
@@ -231,6 +249,8 @@ Once points 1–13 are marked complete, do a full review pass before calling the
 - Walk the full funnel as a buyer would: ad → landing page → register click → Square → payment → confirmation, on both desktop and mobile
 - Confirm every internal anchor, CTA link and tracking event still fires after the reorganization in point 6
 - Note anything deferred or descoped so it doesn't quietly disappear
+- Check the "Additional items" section above — A1 (logo background) is deliberately deferred
+  and should either be done or consciously carried forward, not forgotten
 
 ---
 
