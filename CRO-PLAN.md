@@ -307,6 +307,7 @@ Facts confirmed by Ryan and now stated on the page, which is what makes the valu
 | Where | Monica's own Etobicoke farm | — |
 | Attendee role | Knocks doors themselves, gets live feedback | Brings their own farm's challenges |
 | Timing | Redeemable within one year | Four weeks after the event, 90 minutes |
+| Who's on it | Monica | Monica, plus Ricardo (her right hand in real estate for 15 years) and Ryan (operations, team and growth) |
 
 **Copy.** Ryan chose option 1A for the door-knocking session and 2B for the Zoom session, from
 three drafted per bonus. 1A's closing line — *"One hour in the field teaches what a day in a
