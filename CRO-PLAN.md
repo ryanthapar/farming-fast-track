@@ -315,6 +315,9 @@ classroom can't"* — was replaced at Ryan's direction because it diminished the
 sold. It now reads *"It is where everything you build at the workshop meets a real doorstep,"*
 positioning the bonus as application of the day rather than a substitute for it.
 
+**Naming:** first names only for Ricardo and Ryan, per Ryan. Deliberate — do not "correct" to
+full names later.
+
 **The July 25 line** now reads "Bonus deadlines are firm — this bundle closes August 16",
 keeping the firmness without referencing an expired offer.
 
