@@ -227,7 +227,7 @@ below the timeline states it explicitly. Reco 11's FAQ should carry the same ans
 ---
 
 ## 6. Shorten and reorganize the page — Tier 2
-`[ ]`
+`[x]` Done — reorder + density. Content cuts declined by Ryan; see below.
 
 **Issue:** ~11,000px on desktop, repeating "own a neighbourhood," "hold your commission," Monica's experience and "complete system."
 
@@ -246,6 +246,48 @@ below the timeline states it explicitly. Reco 11's FAQ should carry the same ans
 11. Final registration
 
 **Note:** this is a rebuild, not an edit. Best done after points 1–4 are live.
+
+### Completed — reorder + density, no content removed
+
+**Finding worth recording:** the page was already in the review's recommended sequence. Hero →
+credibility → proof → what you get → agenda → who it's for → bio → registration → testimonials
+→ close all matched. The single section out of place was the photo gallery, which sat *after*
+the final CTA — the deadest position on the page.
+
+So the reorder was one move: **"See It In Action" relocated from last to directly after the
+agenda**, where the doors and the room support someone picturing the day. "Ready to Farm Your
+Area?" is now genuinely the final section.
+
+**Ryan declined the content cuts.** The duplicate stats stay, Monica's bio stays at full
+length, "Look At Who's Winning" and the 21-name student grid stay. Length was reduced by
+density instead:
+
+| Change | |
+|---|---|
+| `section` padding | 66px → 46px (mobile 48px → 34px) |
+| `.hero` padding | 56/60px → 40/44px |
+| Curriculum + student grids | 2 columns → 3 on desktop, 2 at tablet, 1 on mobile |
+| Block top margins | 42px → 30px, 34px → 26px throughout |
+| Callout margins, card padding, agenda row padding | tightened 15–25% |
+
+**Result: 13,109px → 11,605px at 1280px wide — 1,504px shorter, an 11.5% reduction**, with
+nothing removed. Mobile still stacks single-column.
+
+**Disclaimers consolidated to the footer,** per Ryan. All four now live in the footer fineprint
+with distinct symbols, and every in-body marker anchors to them:
+
+| Symbol | Note |
+|---|---|
+| `*` | Commission / 6% disclaimer |
+| `†` | #1 in Etobicoke — R E Stats / TRREB sourcing |
+| `‡` | Career totals as of June 2026 |
+| `§` | Student results vary |
+
+`.about-note` and `.students-note` were removed from the body along with their now-unused CSS.
+This also resolves the `*` collision flagged in reco 2 — the symbol now means one thing.
+
+**Still available later:** the review's actual cuts (shorter bio, dropping the repetition).
+Nothing here forecloses that.
 
 ---
 
