@@ -115,7 +115,7 @@ final stage. The page is now honest about it; the checkout is not yet.
 ---
 
 ## 4. Reframe the 6% commission language — Tier 1
-`[ ]`
+`[~]` **Deferred — decision pending with Ryan.** Reviewed together Aug 10; coming back to it.
 
 **Issue:** the body promises signing every listing at 6% while the footer disclaimer says no rate is guaranteed. The two fight each other.
 
@@ -126,6 +126,43 @@ final stage. The page is now honest about it; the checkout is not yet.
 - Final CTA (line 622): *"sign at 6% every time"* → the reframe
 - Meta descriptions (lines 8, 12) also carry the 6% claim
 - Keep the footnote/disclaimer as is
+
+### Current locations (line numbers as of Aug 10)
+
+| Line | Where | Current |
+|---|---|---|
+| 444 | Curriculum step 12 | `Commission: Get 6% Every Time` |
+| 488 | "Hold your commission" card | *"so you sign at 6% every time"* |
+| 681 | Final CTA paragraph | *"the system to sign at 6% every time"* |
+| 8 | `<meta name="description">` | *"the system to sign every listing at 6%"* |
+| 12 | `<meta property="og:description">` | *"system to sign at 6% every time"* |
+
+Line 716 (the footer disclaimer) stays as-is — it is the thing the rest of the page needs to
+stop contradicting.
+
+### Recommendation on the table
+
+This is the largest substantive change in the plan and the one place worth pushing back on the
+review slightly. "Sign at 6% every time" is the most concrete, most differentiating promise on
+the page and is likely doing real conversion work with agents tired of discounting. The full
+reframe is more credible and legally cleaner, but it is measurably softer copy.
+
+Two options:
+
+1. **Full reframe** (the review's recommendation) — remove the 6% promise everywhere; 6%
+   survives only in the disclaimer as context for Monica's own practice.
+2. **Middle path** — keep 6% but frame it as *Monica's* result rather than the buyer's
+   guarantee. e.g. *"the exact conversation Monica uses to sign at 6% — and how to hold your
+   own fee."* Retains the number's pulling power while removing the implied promise. Not
+   proposed by the review.
+
+**Claude's recommendation:** middle path for the two body locations (lines 488 and 681), and
+the review's full rename for curriculum step 12 → **"Presenting Your Value and Holding Your
+Fee."** A curriculum item reads as a promise about what *you* will achieve, which is where the
+guarantee problem is sharpest. The meta descriptions should follow whichever way the body
+copy goes.
+
+This is a marketing judgment call for Ryan, not a technical one.
 
 ---
 
