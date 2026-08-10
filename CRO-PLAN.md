@@ -76,7 +76,7 @@ introduced here, and is worth cleaning up in reco 6.
 ---
 
 ## 3. Eliminate the price surprise — Tier 1
-`[ ]`
+`[x]` Done.
 
 **Issue:** the page says `$1,000` five times; Square charges `$1,130`. The $130 of HST appears for the first time at the payment screen.
 
@@ -95,9 +95,22 @@ Plus a price line beside each registration button (lines 359, 522, 624).
 *Line numbers refreshed after reco 1. The hero badge pill that used to hold the price is gone;
 the hero price now lives in the venue line.*
 
-**Open decision:** whether to show the full `$1,000 + HST ($1,130)` in the Register price anchor only, keeping `$1,000 + HST` everywhere else. Recommended.
-
 **Leave alone:** the `$3,000` / `$4,000` bonus values — stated values, not charges.
+
+**Completed.** All five references now read `$1,000 + HST`. The Register price anchor
+additionally shows `($1,130 total)` on its own line beneath the headline figure — the one
+place the exact charge appears, so it lands while the buyer is evaluating cost rather than at
+the payment screen.
+
+New `.cta-price` line added under the Register and final CTA button clusters:
+`$1,000 + HST · Tuesday, September 22, 2026` (left-aligned variant in the final section to
+match its layout). The hero needed no separate line — its price already sits directly above
+the button in the venue line.
+
+Verified: seven `$1,000` occurrences in the file, all carrying `+ HST`.
+
+**Still outstanding for reco 10:** Square itself continues to reveal the $1,130 only at the
+final stage. The page is now honest about it; the checkout is not yet.
 
 ---
 
