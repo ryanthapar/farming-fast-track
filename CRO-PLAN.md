@@ -71,6 +71,21 @@ Recos 1–6, 8, 11 and 12. Net effect on the page:
 14. Frequently Asked Questions (`#faq`)
 15. Ready to Farm Your Area? (`.final`)
 
+### Page height log
+
+Measured at 1280px wide, `documentElement.scrollHeight`:
+
+| Point | Height | |
+|---|---|---|
+| Before reco 6 (after recos 1–5) | 13,109px | baseline |
+| After reco 6 density pass | 11,605px | −1,504px |
+| After reco 11 (FAQ added) | 12,820px | +1,215px |
+| After reco 12 (fourth CTA) | 12,939px | +119px |
+
+**Net: 170px shorter than the pre-reco-6 baseline**, having added an agenda, a credibility
+strip, a testimonial, a ten-question FAQ, an extra CTA and a sticky bar. Worth re-measuring
+after any future section is added.
+
 ---
 
 ## 1. Rebuild the hero around the outcome — Tier 1
@@ -368,7 +383,7 @@ All ten answers confirmed by Ryan:
 | Lunch and refreshments | Lunch provided; two breaks built in |
 | What to bring | Laptop only — workbook and pen provided |
 | Farming area needed beforehand? | No, choosing one is step 2; helps to arrive with 2–3 in mind |
-| Suitable for newer agents? | Yes — all experience levels, brand new to seasoned |
+| Suitable for newer agents? | Yes — "brand new agents and seasoned agents" (Ryan's wording, chosen over "all experience levels") |
 | Teams / brokerage groups | Yes; reach out about brokerage programs |
 | Materials included | 12-step plan, scripts, flyers/giveaways calendar, workbook and pen, 1-month "No Chai Samosa" membership |
 | Cancellation / transfer | **Non-refundable and non-transferable** |
@@ -382,8 +397,8 @@ existing 15-minute call with Monica: *"If you're not certain the workshop is rig
 book a call before you register."* That turns a dead end into a next step without misrepresenting
 the policy.
 
-**Cost to page height:** 13,109px was the pre-reco-6 baseline; the page is now 12,820px —
-still below where it started, with a whole FAQ added.
+**Cost to page height:** see the height log below — the FAQ added ~1,200px collapsed, and the
+page still sits under its original height.
 
 ---
 
@@ -430,6 +445,25 @@ Analytics.
 **Sequencing note:** recos 1–6 changed the hero, the price presentation and the page's whole
 persuasion order. Without this item, there is no way to measure whether any of it helped.
 Worth doing before or immediately after the first merge to production, not last.
+
+---
+
+## Before merging to `main`
+
+`main` is what GitHub Pages serves, so merging publishes to
+`ryanthapar.github.io/farming-fast-track` immediately. Points to weigh at that moment:
+
+1. **This is a large single release** — nine recos across the hero, pricing, curriculum
+   labelling, page order and two new sections. Anything that reads wrong will read wrong to
+   live ad traffic.
+2. **Nothing is measurable yet.** Reco 13 is not done: no Google Analytics, and the Meta
+   Pixel's `Purchase` event has never been confirmed. Recos 1–12 changed the hero, the price
+   presentation and the whole persuasion order — without tracking there is no way to know
+   whether registrations moved. Strong argument for doing reco 13 before or immediately after
+   the merge, not last.
+3. **Timing.** The August 16 bonus deadline is close. The hero and Register section both
+   reference it, and the hero line will need removing on the 17th.
+4. **Still outstanding after this merge:** recos 7, 9, 10, 13 and A1.
 
 ---
 
