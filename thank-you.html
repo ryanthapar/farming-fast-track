@@ -24,6 +24,22 @@
   src="https://www.facebook.com/tr?id=560295672672335&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
+<!-- Microsoft Clarity — same project ID as index.html so this page's visits
+     read as converted sessions rather than a separate, unlinked project. -->
+<script>
+  (function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window,document,"clarity","script","xuy3rf5bg1");
+  // Marks the session converted. Pair with the "reserve-clicked" event on
+  // index.html to isolate people who started checkout and never finished:
+  // filter for reserve-clicked where converted is not set.
+  // Caveat: fires on every load of this page, so a refresh, bookmark or
+  // shared link counts as converted — same caveat as the fbq Purchase above.
+  if(window.clarity)window.clarity("set","converted","yes");
+</script>
+<!-- End Microsoft Clarity -->
 <style>
   :root{
     --ground:#ffffff;--surface:#f5f8fa;--surface-2:#eaf0f3;--slate:#37576b;--slate-deep:#294452;
