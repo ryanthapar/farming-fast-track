@@ -370,10 +370,11 @@
   .final p b{color:var(--slate-deep)}
 
   /* Behind-the-scenes gallery */
-  .gallery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;max-width:900px;margin:30px auto 0}
+  .gallery .video{max-width:900px;margin:30px auto 0}
+  .gallery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;max-width:450px;margin:34px auto 0}
   .shot{margin:0}
   .shot img{width:100%;height:auto;display:block;border-radius:18px;border:1px solid var(--line);box-shadow:var(--shadow);background:var(--surface-2)}
-  .shot figcaption{margin-top:14px;text-align:center;font-size:15px;color:var(--muted);line-height:1.5}
+  .shot figcaption{margin-top:12px;text-align:center;font-size:13.5px;color:var(--muted);line-height:1.5}
 
   /* Sticky mobile registration bar */
   .sticky-cta{display:none}
@@ -407,6 +408,7 @@
   @media (max-width:720px){
     section{padding:34px 0}
     .grid,.cards,.who-grid,.details .wrap,.final-grid,.gallery-grid{grid-template-columns:1fr}
+    .gallery-grid{max-width:55%}
     .ag{grid-template-columns:1fr;gap:4px;padding:14px 4px}
     .cred-grid{grid-template-columns:repeat(2,1fr);gap:24px}
     .proof-card{flex-direction:column;text-align:center;padding:24px 20px}
@@ -541,6 +543,21 @@
   <div class="wrap">
     <p class="eyebrow">Behind the Scenes</p>
     <h2 class="section">See It In Action</h2>
+    <figure class="video">
+      <div class="video-frame">
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/NcJWrF7qieQ"
+          title="Let's Farm with Monica Thapar — agent testimonial"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen></iframe>
+      </div>
+      <figcaption>
+        Hear it straight from an agent who farms.
+        <a href="https://youtu.be/NcJWrF7qieQ" target="_blank" rel="noopener noreferrer">Watch on YouTube ↗</a>
+      </figcaption>
+    </figure>
     <div class="gallery-grid">
       <figure class="shot">
         <img src="personality-colour-doors.jpg.JPG" alt="Four brightly coloured doors on stage used to role-play door knocking for different personality types" loading="lazy">
@@ -717,21 +734,6 @@
         <p>“<b>Her enthusiasm is infectious.</b> I loved it and it was definitely worth the money. So take this course and actually do what she says to do.”</p>
         <p class="by">— Ray Chesher <em>(May 2022)</em> · Your Home Today Realty</p>
       </div>
-      <figure class="video">
-        <div class="video-frame">
-          <iframe
-            src="https://www.youtube-nocookie.com/embed/NcJWrF7qieQ"
-            title="Let's Farm with Monica Thapar — agent testimonial"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen></iframe>
-        </div>
-        <figcaption>
-          Hear it straight from an agent who farms.
-          <a href="https://youtu.be/NcJWrF7qieQ" target="_blank" rel="noopener noreferrer">Watch on YouTube ↗</a>
-        </figcaption>
-      </figure>
     </div>
   </div>
 </section>
