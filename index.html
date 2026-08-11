@@ -31,6 +31,17 @@
   src="https://www.facebook.com/tr?id=560295672672335&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
+<!-- Microsoft Clarity — click maps, scroll maps and session replays.
+     Same project ID on thank-you.html so registrations read as converted
+     sessions in one funnel. Behaviour tracking is wired up before </body>. -->
+<script>
+  (function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window,document,"clarity","script","xuy3rf5bg1");
+</script>
+<!-- End Microsoft Clarity -->
 <style>
   :root{
     --ground:#ffffff;
@@ -434,7 +445,7 @@
     <p class="when">Tuesday, September 22, 2026 &nbsp;·&nbsp; 10:00 AM – 6:00 PM</p>
     <p class="where">Venu Event Space, Vaughan &nbsp;·&nbsp; $1,000 + HST per seat</p>
     <div class="cta-row">
-      <a class="btn btn-primary" href="https://square.link/u/hlcxwXLn" target="_blank" rel="noopener noreferrer" onclick="if(typeof fbq!=='undefined')fbq('track','InitiateCheckout');">Register for September 22</a>
+      <a data-cta="buy:hero" class="btn btn-primary" href="https://square.link/u/hlcxwXLn" target="_blank" rel="noopener noreferrer" onclick="if(typeof fbq!=='undefined')fbq('track','InitiateCheckout');">Register for September 22</a>
       <a class="btn btn-ghost" href="#curriculum">See What's Inside</a>
     </div>
     <p class="reassure">In person with Monica Thapar &nbsp;·&nbsp; Written materials included &nbsp;·&nbsp; Early-registration bonuses available until August 16</p>
@@ -502,7 +513,7 @@
       <p class="plan-v">All 12 steps come home with you <b>in writing, in this exact order</b>. You'll know what to do first, what comes next, and what “done” looks like at every step — so there's no guessing where to start on Monday morning. <b>Work the plan one step at a time and your farm is built.</b></p>
     </div>
     <div class="cta-row">
-      <a class="btn btn-primary" href="https://square.link/u/hlcxwXLn" target="_blank" rel="noopener noreferrer" onclick="if(typeof fbq!=='undefined')fbq('track','InitiateCheckout');">Register for September 22</a>
+      <a data-cta="buy:curriculum" class="btn btn-primary" href="https://square.link/u/hlcxwXLn" target="_blank" rel="noopener noreferrer" onclick="if(typeof fbq!=='undefined')fbq('track','InitiateCheckout');">Register for September 22</a>
     </div>
     <p class="cta-price">$1,000 + HST &nbsp;·&nbsp; Tuesday, September 22, 2026 &nbsp;·&nbsp; Venu Event Space, Vaughan</p>
     <div class="membership">
@@ -695,9 +706,9 @@
     </div>
     <p class="deadline-note">Bonus deadlines are firm — this bundle closes August 16.</p>
     <div class="cta-row cta-row--trio">
-      <a class="btn btn-primary" href="https://square.link/u/hlcxwXLn" target="_blank" rel="noopener noreferrer" onclick="if(typeof fbq!=='undefined')fbq('track','InitiateCheckout');">Reserve My Seat Now</a>
-      <a class="btn btn-ghost" href="https://calendly.com/letsfarmwithmonicathapar/book-a-call-with-monica-landing-page" target="_blank" rel="noopener noreferrer" onclick="if(typeof fbq!=='undefined')fbq('track','Schedule');">Book a Call with Monica</a>
-      <a class="btn btn-soft" href="https://docs.google.com/forms/d/e/1FAIpQLSd_waIEcCJANQgJKwWs-mCb_5LJV01F7Ma3oNRZMleHCLWsQQ/viewform" target="_blank" rel="noopener noreferrer" onclick="if(typeof fbq!=='undefined')fbq('track','Contact');">Request More Info</a>
+      <a data-cta="buy:register" class="btn btn-primary" href="https://square.link/u/hlcxwXLn" target="_blank" rel="noopener noreferrer" onclick="if(typeof fbq!=='undefined')fbq('track','InitiateCheckout');">Reserve My Seat Now</a>
+      <a data-cta="call:register" class="btn btn-ghost" href="https://calendly.com/letsfarmwithmonicathapar/book-a-call-with-monica-landing-page" target="_blank" rel="noopener noreferrer" onclick="if(typeof fbq!=='undefined')fbq('track','Schedule');">Book a Call with Monica</a>
+      <a data-cta="form:register" class="btn btn-soft" href="https://docs.google.com/forms/d/e/1FAIpQLSd_waIEcCJANQgJKwWs-mCb_5LJV01F7Ma3oNRZMleHCLWsQQ/viewform" target="_blank" rel="noopener noreferrer" onclick="if(typeof fbq!=='undefined')fbq('track','Contact');">Request More Info</a>
     </div>
     <p class="cta-price">$1,000 + HST &nbsp;·&nbsp; Tuesday, September 22, 2026</p>
     <p class="cta-note">Not sure if farming works in your market? Book a 15-minute call with Monica and find out before you register.</p>
@@ -779,52 +790,52 @@
     <h2 class="section">Frequently Asked Questions</h2>
     <div class="faq-list">
 
-      <details class="faq">
+      <details class="faq" data-faq="location-parking">
         <summary>Where exactly is it, and is parking included?</summary>
         <p class="a">Venu Event Space, <b>2800 Hwy 7, Vaughan, ON L4K 1W8</b>. Parking is <b>free and ample</b> on site — no permits, no meters, no hunting for a spot.</p>
       </details>
 
-      <details class="faq">
+      <details class="faq" data-faq="lunch">
         <summary>Are lunch and refreshments provided?</summary>
         <p class="a"><b>Yes — lunch is provided.</b> There are also two breaks built into the day, one mid-morning and one mid-afternoon.</p>
       </details>
 
-      <details class="faq">
+      <details class="faq" data-faq="what-to-bring">
         <summary>What should I bring?</summary>
         <p class="a">Just your <b>laptop</b>. Your workbook and pen are provided — you'll be building your plan on the page as the day goes.</p>
       </details>
 
-      <details class="faq">
+      <details class="faq" data-faq="area-picked">
         <summary>Do I need to have a farming area picked already?</summary>
         <p class="a">No. <b>Choosing the right area is step 2 of the day</b>, and Monica walks you through how to do it. It does help to arrive with <b>two or three areas in mind</b> — you'll get more out of that session if you have something concrete to work with.</p>
       </details>
 
-      <details class="faq">
+      <details class="faq" data-faq="new-agents">
         <summary>Is this suitable for newer agents?</summary>
         <p class="a">Yes. The day is built for <b>brand new agents and seasoned agents</b> alike. Farming doesn't require a database or years of past clients; it requires a defined area and a system, which is exactly what you'll build.</p>
       </details>
 
-      <details class="faq">
+      <details class="faq" data-faq="teams">
         <summary>Can teams or brokerage groups attend?</summary>
         <p class="a">Yes. If you'd like to bring a team or a group from your brokerage, <b>reach out to us about brokerage programs</b> — use the Request More Info form and we'll get back to you.</p>
       </details>
 
-      <details class="faq">
+      <details class="faq" data-faq="materials">
         <summary>What materials are included?</summary>
         <p class="a">Your written <b>12-step farming plan</b> in order, <b>door-knocking scripts</b>, a <b>flyers and giveaways calendar</b>, plus your workbook and pen. You also get a <b>1-month membership to Monica's private "No Chai Samosa" group</b>, where farmers share wins, scripts and support.</p>
       </details>
 
-      <details class="faq">
+      <details class="faq" data-faq="refunds">
         <summary>Can I cancel or transfer my ticket?</summary>
         <p class="a"><b>No.</b> Tickets are non-refundable and cannot be transferred to another person or another date. If you're not certain the workshop is right for you, <b>book a 15-minute call with Monica before you register</b> — it's better to ask first than to hold a seat you can't use.</p>
       </details>
 
-      <details class="faq">
+      <details class="faq" data-faq="bonuses">
         <summary>How and when do I redeem the bonuses?</summary>
         <p class="a"><b>We reach out to you after the event</b> to book your private door-knocking session with Monica — that one is redeemable within a year, in Etobicoke. The group Zoom implementation session runs <b>four weeks after the event</b>, and the link is sent to you <b>five days beforehand</b>.</p>
       </details>
 
-      <details class="faq">
+      <details class="faq" data-faq="payment-plan">
         <summary>Is a payment plan available?</summary>
         <p class="a">No — there are no payment plans. Registration is paid in full at checkout: <b>$1,000 + HST</b>, $1,130 in total.</p>
       </details>
@@ -844,9 +855,9 @@
         <p>Don't miss this one-day opportunity to build your entire farming business — the plan, the branding, the scripts, and the fee conversation Monica uses to sign at <b>6%</b><a class="ast" href="#commission-note" aria-label="See commission disclaimer">*</a> — and how to hold your own.</p>
         <p>Seats are limited and priority goes to early registrants. <b>Reserve your seat today.</b></p>
         <div class="cta-row cta-row--trio" style="justify-content:flex-start">
-          <a class="btn btn-primary" href="https://square.link/u/hlcxwXLn" target="_blank" rel="noopener noreferrer" onclick="if(typeof fbq!=='undefined')fbq('track','InitiateCheckout');">Reserve My Seat</a>
-          <a class="btn btn-ghost" href="https://calendly.com/letsfarmwithmonicathapar/book-a-call-with-monica-landing-page" target="_blank" rel="noopener noreferrer" onclick="if(typeof fbq!=='undefined')fbq('track','Schedule');">Book a Call with Monica</a>
-          <a class="btn btn-soft" href="https://docs.google.com/forms/d/e/1FAIpQLSd_waIEcCJANQgJKwWs-mCb_5LJV01F7Ma3oNRZMleHCLWsQQ/viewform" target="_blank" rel="noopener noreferrer" onclick="if(typeof fbq!=='undefined')fbq('track','Contact');">Request More Info</a>
+          <a data-cta="buy:final" class="btn btn-primary" href="https://square.link/u/hlcxwXLn" target="_blank" rel="noopener noreferrer" onclick="if(typeof fbq!=='undefined')fbq('track','InitiateCheckout');">Reserve My Seat</a>
+          <a data-cta="call:final" class="btn btn-ghost" href="https://calendly.com/letsfarmwithmonicathapar/book-a-call-with-monica-landing-page" target="_blank" rel="noopener noreferrer" onclick="if(typeof fbq!=='undefined')fbq('track','Schedule');">Book a Call with Monica</a>
+          <a data-cta="form:final" class="btn btn-soft" href="https://docs.google.com/forms/d/e/1FAIpQLSd_waIEcCJANQgJKwWs-mCb_5LJV01F7Ma3oNRZMleHCLWsQQ/viewform" target="_blank" rel="noopener noreferrer" onclick="if(typeof fbq!=='undefined')fbq('track','Contact');">Request More Info</a>
         </div>
         <p class="cta-price cta-price--left">$1,000 + HST &nbsp;·&nbsp; Tuesday, September 22, 2026</p>
       </div>
@@ -862,8 +873,65 @@
 
 <div class="sticky-cta" role="region" aria-label="Register for Fast Track Farming">
   <p class="info">Sept. 22 <span>$1,000 + HST</span></p>
-  <a class="btn btn-primary" href="https://square.link/u/hlcxwXLn" target="_blank" rel="noopener noreferrer" onclick="if(typeof fbq!=='undefined')fbq('track','InitiateCheckout');">Register</a>
+  <a data-cta="buy:sticky" class="btn btn-primary" href="https://square.link/u/hlcxwXLn" target="_blank" rel="noopener noreferrer" onclick="if(typeof fbq!=='undefined')fbq('track','InitiateCheckout');">Register</a>
 </div>
+
+<!-- Behaviour tracking for Microsoft Clarity.
+     Everything is delegated from one listener rather than added inline to each
+     button, so the nine CTAs cannot drift apart as the page is edited. Labels
+     live on the elements themselves as data-cta / data-faq.
+
+     Ordering note: this listener sits on `document` and runs during the bubble
+     phase, so each button's own inline fbq handler has already fired by the
+     time it runs. A failure here can never cost a Meta conversion event. -->
+<script>
+(function(){
+  function tag(){ return window.clarity || null; }
+
+  // Which of the three actions a visitor takes, and where on the page they
+  // take it: buy: / call: / form: paired with the section. Answers whether the
+  // free options are capturing people who would otherwise have registered.
+  document.addEventListener("click", function(e){
+    var el = e.target && e.target.closest ? e.target.closest("[data-cta]") : null;
+    if(!el) return;
+    var c = tag(); if(!c) return;
+    var label = el.getAttribute("data-cta");
+    c("set","cta",label);
+    // Paired with the "converted" tag on thank-you.html: sessions with this
+    // event and no converted tag are the people who started checkout at Square
+    // and never finished.
+    if(label.indexOf("buy:") === 0) c("event","reserve-clicked");
+  });
+
+  // Which FAQ questions get opened — a ranked list of visitor objections in
+  // their own priority order. "refunds" and "payment-plan" are the two whose
+  // answer is a hard no, so they are the ones worth watching.
+  var faqs = document.querySelectorAll("details.faq[data-faq]");
+  Array.prototype.forEach.call(faqs, function(d){
+    d.addEventListener("toggle", function(){
+      var c = tag();
+      if(d.open && c) c("set","faq", d.getAttribute("data-faq"));
+    });
+  });
+
+  // Did the visitor ever scroll far enough to see the offer? The register
+  // section sits 56% down a page that runs to roughly 19,000px on a phone.
+  // Fires once per session. Clarity segments by device, so this separates
+  // "never saw the pricing" from "saw it and passed" on desktop and mobile.
+  var reg = document.getElementById("register");
+  if(reg && "IntersectionObserver" in window){
+    var fired = false;
+    var io = new IntersectionObserver(function(entries, obs){
+      if(entries[0].isIntersecting && !fired){
+        fired = true;
+        var c = tag(); if(c) c("event","saw-register");
+        obs.disconnect();
+      }
+    });
+    io.observe(reg);
+  }
+})();
+</script>
 
 </body>
 </html>
