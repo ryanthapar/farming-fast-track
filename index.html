@@ -375,6 +375,22 @@
   .shot img{width:100%;height:auto;display:block;border-radius:18px;border:1px solid var(--line);box-shadow:var(--shadow);background:var(--surface-2)}
   .shot figcaption{margin-top:14px;text-align:center;font-size:15px;color:var(--muted);line-height:1.5}
 
+  /* Sticky mobile registration bar */
+  .sticky-cta{display:none}
+  @media (max-width:720px){
+    .sticky-cta{
+      display:flex;position:fixed;left:0;right:0;bottom:0;z-index:60;
+      align-items:center;justify-content:space-between;gap:12px;
+      background:var(--slate);color:#fff;
+      padding:10px 14px;padding-bottom:calc(10px + env(safe-area-inset-bottom,0px));
+      box-shadow:0 -6px 20px rgba(41,68,82,.3);
+    }
+    .sticky-cta .info{margin:0;font-size:14px;font-weight:900;line-height:1.25;letter-spacing:.2px}
+    .sticky-cta .info span{display:block;font-size:12.5px;font-weight:700;color:rgba(255,255,255,.75)}
+    .sticky-cta .btn{padding:13px 22px;font-size:14px;white-space:nowrap}
+    body{padding-bottom:76px}
+  }
+
   footer{padding:40px 0 56px;text-align:center;color:var(--muted);font-size:13.5px}
   footer .brand{font-weight:800;color:var(--slate);letter-spacing:.3px}
   .ast{color:inherit;text-decoration:none;font-weight:700;vertical-align:super;font-size:.7em}
@@ -483,6 +499,10 @@
       <p class="plan-k">You leave with the plan — not just the notes</p>
       <p class="plan-v">All 12 steps come home with you <b>in writing, in this exact order</b>. You'll know what to do first, what comes next, and what “done” looks like at every step — so there's no guessing where to start on Monday morning. <b>Work the plan one step at a time and your farm is built.</b></p>
     </div>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="https://square.link/u/hlcxwXLn" target="_blank" rel="noopener noreferrer" onclick="if(typeof fbq!=='undefined')fbq('track','InitiateCheckout');">Register for September 22</a>
+    </div>
+    <p class="cta-price">$1,000 + HST &nbsp;·&nbsp; Tuesday, September 22, 2026 &nbsp;·&nbsp; Venu Event Space, Vaughan</p>
     <div class="membership">
       <span class="plus">PLUS</span> &nbsp;<b>A 1-Month Membership to Monica's exclusive “No Chai Samosa” group</b> — the private community where farmers share wins, scripts, and support.
     </div>
@@ -779,7 +799,7 @@
 
       <details class="faq">
         <summary>Is this suitable for newer agents?</summary>
-        <p class="a">Yes. The day is built for <b>all experience levels</b> — brand new licensees and seasoned agents both. Farming doesn't require a database or years of past clients; it requires a defined area and a system, which is exactly what you'll build.</p>
+        <p class="a">Yes. The day is built for <b>brand new agents and seasoned agents</b> alike. Farming doesn't require a database or years of past clients; it requires a defined area and a system, which is exactly what you'll build.</p>
       </details>
 
       <details class="faq">
@@ -837,6 +857,11 @@
   <p>Fast Track Farming · Tuesday, September 22, 2026 · Venu Event Space</p>
   <p class="fineprint" id="commission-note">*Commission and remuneration rates are not fixed, standardized, or set by law, and are fully negotiable between a client and a brokerage. The 6% referenced throughout reflects Monica Thapar's own practice and results in her market. Fast Track Farming teaches an approach to presenting and holding your fee — it is not a guarantee that any participant will obtain any particular rate, listing, or level of income. Results depend on your market, your brokerage's policies, and the effort you put in. Nothing on this page is legal, financial, or brokerage-compliance advice.<br><br><span id="source-etobicoke">†Based on 'All Agents Totals Combined For Sold Properties' total listed &amp; sold units in Etobicoke out of 75,496 agents, as reported by independent research company R E Stats Inc. &amp; sourced from TRREB (The Toronto Regional Real Estate Board) as of May 31, 2025.</span><br><span id="source-career">‡Career totals as of June 2026. Homes sold and sales volume reflect Monica Thapar's combined representation of both buyers and sellers.</span><br><span id="source-students">§Some of these agents make over $2 million dollars and/or dominate in their farms. Individual results vary.</span></p>
 </footer>
+
+<div class="sticky-cta" role="region" aria-label="Register for Fast Track Farming">
+  <p class="info">Sept. 22 <span>$1,000 + HST</span></p>
+  <a class="btn btn-primary" href="https://square.link/u/hlcxwXLn" target="_blank" rel="noopener noreferrer" onclick="if(typeof fbq!=='undefined')fbq('track','InitiateCheckout');">Register</a>
+</div>
 
 </body>
 </html>

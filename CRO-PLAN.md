@@ -34,14 +34,14 @@ Each item carries a **Tier** annotation for effort/risk. That's information, not
 | 9 | Replace the email link with an enquiry form | 3 | `[ ]` mostly pre-done |
 | 10 | Improve the checkout handoff | 3 | `[ ]` Square-side |
 | 11 | Add an FAQ section | 2 | `[x]` |
-| 12 | Add a persistent mobile registration button | 3 | `[ ]` |
+| 12 | Add a persistent mobile registration button | 3 | `[x]` |
 | 13 | Strengthen measurement and follow-up | 3 | `[ ]` |
 | A1 | Logo has a baked-in black background | 1 | `[ ]` deferred |
 | 14 | Final review pass | — | `[ ]` |
 
 ### What shipped on `claude/landing-page-edits-w5j1g9`
 
-Recos 1–6, 8 and 11. Net effect on the page:
+Recos 1–6, 8, 11 and 12. Net effect on the page:
 
 - Hero leads with the outcome, not the event name; event name moved to the eyebrow
 - Credibility strip and Renee Proulx's testimonial now sit directly below the hero
@@ -51,6 +51,7 @@ Recos 1–6, 8 and 11. Net effect on the page:
 - Photo gallery moved out of last position; page 11.5% shorter by density
 - Bonuses lead with what the attendee gets, with the expired July 25 reference removed
 - New FAQ section answering all ten of the review's questions
+- Sticky mobile registration bar, plus a fourth CTA after "What You'll Build"
 
 ### Current section order
 
@@ -387,13 +388,28 @@ still below where it started, with a whole FAQ added.
 ---
 
 ## 12. Add a persistent mobile registration button — Tier 3
-`[ ]` **Not started**
+`[x]` **Complete**
 
-**Issue:** three CTA clusters across a long page — hero `.cta-row`, Register `.cta-row--trio`,
-final `.cta-row--trio` — leaving long stretches where a visitor can't act.
+**Issue:** three CTA clusters across a long page — hero, Register, final — leaving long
+stretches where a visitor can't act.
 
-**Change:** sticky mobile bar reading `Sept. 22 | $1,000 + HST | Register`. Add a fourth
-registration button after the "What You'll Build" section (`#curriculum`).
+**Shipped.**
+
+- **`.sticky-cta`** — fixed bottom bar, mobile only (`max-width:720px`), reading `Sept. 22 /
+  $1,000 + HST` with a `Register` button. Slate background, fires the same
+  `InitiateCheckout` pixel event as every other registration button. Respects
+  `env(safe-area-inset-bottom)` for iPhone home-indicator clearance, and `body` carries a
+  76px bottom padding on mobile so the bar never covers the footer disclaimers.
+- **Fourth CTA** after "What You'll Build", before the membership callout, with the standard
+  `.cta-price` line beneath it.
+
+**Decision:** the bar is always visible on mobile rather than appearing after a scroll
+threshold. That would need JavaScript, and the page currently ships none of its own. Visible-
+always is marginally redundant at the very top of the page and completely robust everywhere
+else.
+
+**Registration touchpoints are now five on mobile** (sticky bar, hero, post-curriculum,
+Register section, final CTA) and four on desktop.
 
 ---
 
