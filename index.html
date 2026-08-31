@@ -252,11 +252,10 @@
   }
   .about-highlight .star{font-size:22px;line-height:1.2;flex:none}
 
-  /* Early-bird cards */
+  /* Bonus card */
   .early{background:var(--surface)}
   .cards{display:grid;grid-template-columns:repeat(2,1fr);align-items:start;gap:18px;max-width:860px;margin:28px auto 0}
   .cards--single{grid-template-columns:1fr;max-width:620px}
-  .deadline-note{max-width:620px;margin:16px auto 0;text-align:center;font-size:13.5px;color:var(--muted);line-height:1.5}
   .card{
     background:var(--ground);border:1px solid var(--line);border-radius:18px;
     padding:30px 28px;box-shadow:var(--shadow);position:relative;overflow:hidden;
@@ -282,16 +281,6 @@
   }
   .total-value b{color:var(--green);font-size:20px}
   .total-value .free{display:block;font-weight:700;color:var(--slate);font-size:14px;margin-top:2px}
-  .clock{font-size:14px;font-weight:800;color:var(--red);text-align:center;margin:6px 0 0;letter-spacing:.3px}
-  .card--after{background:var(--surface-2);box-shadow:none}
-  .card--after::before{background:var(--muted)}
-  .card--after .tag{background:var(--muted)}
-  .card--after h3,.card--after li{color:var(--muted)}
-  .card--after li b{color:var(--muted)}
-  .card--after .x{color:var(--muted);font-weight:900;flex:none}
-  .card--after .gone{text-decoration:line-through;text-decoration-color:var(--muted)}
-  .total-value--after{background:transparent;border-style:dashed;color:var(--muted)}
-  .total-value--after .free{color:var(--muted)}
   /* Anchored price block */
   .price-anchor{
     max-width:640px;margin:26px auto 0;text-align:center;
@@ -448,7 +437,7 @@
       <a data-cta="buy:hero" class="btn btn-primary" href="https://square.link/u/hlcxwXLn" target="_blank" rel="noopener noreferrer" onclick="if(typeof fbq!=='undefined')fbq('track','InitiateCheckout');">Register for September 22</a>
       <a class="btn btn-ghost" href="#curriculum">See What's Inside</a>
     </div>
-    <p class="reassure">In person with Monica Thapar &nbsp;·&nbsp; Written materials included &nbsp;·&nbsp; Early-registration bonuses available until August 16</p>
+    <p class="reassure">In person with Monica Thapar &nbsp;·&nbsp; Written materials included &nbsp;·&nbsp; $1,500 bonus session included with every seat</p>
   </div>
 </header>
 
@@ -675,36 +664,23 @@
 
 <section class="early" id="register">
   <div class="wrap">
-    <p class="eyebrow eyebrow--red">Register Early — The Sooner You Register, The More You Get</p>
+    <p class="eyebrow eyebrow--red">Every Seat Includes More Than the Day Itself</p>
     <h2 class="section">Register &amp; Get More</h2>
     <div class="price-anchor">
-      <p class="pa-line">Ticket: <b>$1,000 + HST</b><span class="pa-dot">·</span>Bonuses included: <b>$3,000</b></p>
-      <p class="pa-total">Total value <b>$4,000</b> — you pay <b class="pa-pay">$1,000 + HST</b> <span class="pa-tax">($1,130 total)</span></p>
-      <p class="pa-sub">One full day — plus the bonuses below, when you register by August 16</p>
+      <p class="pa-line">Ticket: <b>$1,000 + HST</b><span class="pa-dot">·</span>Bonus included: <b>$1,500</b></p>
+      <p class="pa-total">Total value <b>$2,500</b> — you pay <b class="pa-pay">$1,000 + HST</b> <span class="pa-tax">($1,130 total)</span></p>
+      <p class="pa-sub">One full day — plus the bonus below, included with every seat</p>
     </div>
-    <div class="cards">
+    <div class="cards cards--single">
       <div class="card">
-        <span class="tag">By August 16</span>
-        <h3>Register by August 16, 2026 — the FASTTRACK Bundle</h3>
+        <span class="tag">Included</span>
+        <h3>Register for September 22, 2026 — plus the FASTTRACK Bonus Session</h3>
         <ul>
-          <li><span class="tick">⭐</span><span><b>Private 1-Hour Live Door Knocking Session with Monica</b> — one-on-one with Monica, in her own Etobicoke farm, on the streets she has worked for a decade. Watch her open real doors with real homeowners, then take doors yourself and get her feedback on the spot, while it is still fresh. It is where everything you build at the workshop meets a real doorstep.<span class="bonus-meta"><span class="val">$1,500 value</span> &nbsp;·&nbsp; Redeemable within one year in Etobicoke</span></span></li>
           <li><span class="tick">⭐</span><span><b>Exclusive Post-Event Group Zoom Implementation Session</b> — your streets, your demographics, your objections. Four weeks after the event we regroup for 90 minutes on Zoom, so you can ask about your farm specifically — and hear what is working, and what is stalling, for everyone else who started when you did. You get the whole team on the call: Monica, plus <b>Ricardo</b>, her right hand in real estate for 15 years, and <b>Ryan</b>, who runs operations, team and growth.<span class="bonus-meta"><span class="val">$1,500 value</span> &nbsp;·&nbsp; 90 minutes, four weeks after the event</span></span></li>
         </ul>
-        <p class="total-value"><b>$3,000</b> in bonuses — <span class="free">yours when you register by August 16</span></p>
-        <p class="clock">⏰ Register by August 16 to claim the bundle</p>
-      </div>
-      <div class="card card--after">
-        <span class="tag">After August 16</span>
-        <h3>Register after August 16</h3>
-        <ul>
-          <li><span class="x">✕</span><span class="gone">Private 1-Hour Live Door Knocking Session with Monica</span></li>
-          <li><span class="x">✕</span><span class="gone">Exclusive Post-Event Group Zoom Implementation Session</span></li>
-        </ul>
-        <p class="total-value total-value--after">Event ticket only — <span class="free">no bonuses included</span></p>
-        <p class="clock">Same $1,000 + HST — $3,000 less value</p>
+        <p class="total-value"><b>$1,500</b> bonus — <span class="free">included with every seat</span></p>
       </div>
     </div>
-    <p class="deadline-note">Bonus deadlines are firm — this bundle closes August 16.</p>
     <div class="cta-row cta-row--trio">
       <a data-cta="buy:register" class="btn btn-primary" href="https://square.link/u/hlcxwXLn" target="_blank" rel="noopener noreferrer" onclick="if(typeof fbq!=='undefined')fbq('track','InitiateCheckout');">Reserve My Seat Now</a>
       <a data-cta="call:register" class="btn btn-ghost" href="https://calendly.com/letsfarmwithmonicathapar/book-a-call-with-monica-landing-page" target="_blank" rel="noopener noreferrer" onclick="if(typeof fbq!=='undefined')fbq('track','Schedule');">Book a Call with Monica</a>
@@ -831,8 +807,8 @@
       </details>
 
       <details class="faq" data-faq="bonuses">
-        <summary>How and when do I redeem the bonuses?</summary>
-        <p class="a"><b>We reach out to you after the event</b> to book your private door-knocking session with Monica — that one is redeemable within a year, in Etobicoke. The group Zoom implementation session runs <b>four weeks after the event</b>, and the link is sent to you <b>five days beforehand</b>.</p>
+        <summary>How and when do I redeem the bonus?</summary>
+        <p class="a">The group Zoom implementation session runs <b>four weeks after the event</b>, and the link is sent to you <b>five days beforehand</b>.</p>
       </details>
 
       <details class="faq" data-faq="payment-plan">
